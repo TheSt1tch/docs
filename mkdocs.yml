@@ -56,8 +56,6 @@ markdown_extensions:
   - pymdownx.keys
 
 copyright: 2023 &copy; TheSt1tch - Licensed under GPLv3
-  analytics:
-    provider: plausible
 
 nav:
   #- Welcome: 'index.md'
