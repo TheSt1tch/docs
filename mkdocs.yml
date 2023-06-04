@@ -1,1 +1,74 @@
-site_name: My Docs
+site_name: Docs St1t.ru
+repo_url: https://st1t.ru/thest1tch/docs
+repo_name: thest1tch/docs
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  custom_dir: overrides
+  language: en
+  #logo: images/site/logo.png
+  favicon: images/assets/favicon.png
+  icon:
+    repo: fontawesome/brands/github
+    logo: fontawesome/regular/folder-open
+  palette:
+    - scheme: default
+      primary: blue
+      accent: teal
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+  font:
+    code: Jet Brains Mono
+  features:
+    - navigation.instant
+    - navigation.sections # prevents collapsible sections
+    - navigation.indexes # section index pages
+    - navigation.expand #expands sections by default
+  # insiders only
+  #   - search.suggest
+
+plugins:
+  - git-revision-date
+  - search
+  - minify:
+      minify_html: true
+markdown_extensions:
+  - abbr
+  - admonition # enables coloured blocks mid article
+  - attr_list # improves image handling
+  - pymdownx.details # enables collapsible admonitions
+  - footnotes
+  - meta # adds support for front matter
+  - toc:
+      permalink: true
+      toc_depth: 4
+  - pymdownx.highlight: # code highlighting
+      linenums: true
+  - pymdownx.tabbed # enables tabs for embedded blocks
+  - pymdownx.snippets
+  - pymdownx.superfences # allows for the nesting of code blocks inside other blocks
+  - pymdownx.keys
+
+copyright: 2023 &copy; TheSt1tch - Licensed under GPLv3
+  analytics:
+    provider: plausible
+
+nav:
+  #- Welcome: 'index.md'
+  - 1. Docker Compose:
+    - index.md
+  - 2. Docker:
+
+  - 3. Mediaserver:
+
+  - 4. Proxmox: 
+
+  - 5. Synology:
+
+  - 6. Hardware:
