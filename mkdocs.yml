@@ -34,10 +34,12 @@ theme:
   #   - search.suggest
 
 plugins:
-  - git-revision-date
-  - search
-  - minify:
-      minify_html: true
+    - search
+    - redirects:
+        redirect_maps:
+            user-guide/plugins.md: dev-guide/plugins.md
+            user-guide/custom-themes.md: dev-guide/themes.md
+            user-guide/styling-your-docs.md: user-guide/choosing-your-theme.md
 markdown_extensions:
   - abbr
   - admonition # enables coloured blocks mid article
@@ -58,15 +60,10 @@ markdown_extensions:
 copyright: 2023 &copy; TheSt1tch - Licensed under GPLv3
 
 nav:
-  #- Welcome: 'index.md'
-  - 1. Docker Compose:
-    - index.md
-  - 2. Docker:
-
-  - 3. Mediaserver:
-
-  - 4. Proxmox: 
-
-  - 5. Synology:
-
-  - 6. Hardware:
+  - Welcome: 'index.md'
+  #- 1. Docker Compose:
+  #- 2. Docker:
+  #- 3. Mediaserver:
+  #- 4. Proxmox: 
+  #- 5. Synology:
+  #- 6. Hardware:
