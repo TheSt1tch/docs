@@ -61,7 +61,8 @@ copyright: 2023 &copy; TheSt1tch - Licensed under GPLv3
 
 nav:
   - Welcome: 'index.md'
-  #- 1. Docker Compose:
+  - 1. Docker Compose:
+    - Linx Server: 'docker-compose/linx-server.md'
   #- 2. Docker:
   #- 3. Mediaserver:
   #- 4. Proxmox: 
