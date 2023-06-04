@@ -4,16 +4,20 @@ type: docker
 name: build
 steps:
 - name: build
-  image: squidfunk/mkdocs-material:7.1.9
+  image: squidfunk/mkdocs-material:9.1.15
+  pull: if-not-exists
   volumes:
   - name: site
     path: /site
   commands:
   - pip install -U -r ./requirements.txt
   - mkdocs build
-  - cp -r site/ /site
-  - chmod -R 777 /site
+  when:
+    event: push
+    branch: master
+  #- cp -r site/ /site
+  #- chmod -R 777 /site
 volumes:
 - name: site
   host:
-    path: /opt/appdata/mkdocswiki
+    path: /opt/appdata/mkdocswiki/docs
