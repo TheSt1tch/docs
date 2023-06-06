@@ -1,5 +1,5 @@
 site_name: Docs St1t.ru
-repo_url: https://st1t.ru/thest1tch/docs
+repo_url: https://git.st1t.ru/thest1tch/docs
 repo_name: thest1tch/docs
 edit_uri: edit/main/docs/
 
@@ -35,11 +35,6 @@ theme:
 
 plugins:
     - search
-    - redirects:
-        redirect_maps:
-            user-guide/plugins.md: dev-guide/plugins.md
-            user-guide/custom-themes.md: dev-guide/themes.md
-            user-guide/styling-your-docs.md: user-guide/choosing-your-theme.md
 markdown_extensions:
   - abbr
   - admonition # enables coloured blocks mid article
@@ -64,7 +59,8 @@ nav:
   - 1. Docker Compose:
     - Linx Server: 'docker-compose/linx-server.md'
   #- 2. Docker:
-  #- 3. Mediaserver:
+  - 3. Mediaserver:
+    - Plex Meta Manager: docker-compose/plex-mm.md
   #- 4. Proxmox: 
   #- 5. Synology:
   #- 6. Hardware:
