@@ -55,12 +55,7 @@ markdown_extensions:
 copyright: 2023 &copy; TheSt1tch - Licensed under GPLv3
 
 nav:
-  - Welcome: 'index.md'
-  - 1. Docker Compose:
-    - Linx Server: 'docker-compose/linx-server.md'
-  #- 2. Docker:
-  - 3. Mediaserver:
+  - Welcome: index.md
+  - 🐳 Docker:
+    - Linx Server: docker-compose/linx-server.md
     - Plex Meta Manager: docker-compose/plex-mm.md
-  #- 4. Proxmox: 
-  #- 5. Synology:
-  #- 6. Hardware:
