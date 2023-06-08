@@ -46,3 +46,4 @@ site/assets/stylesheets/palette.ecc896b0.min.css.map
 site/docker-compose/linx-server/index.html
 site/docker-compose/plex-mm/index.html
 site/search/search_index.json
+site/sitemap.xml.gz
