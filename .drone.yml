@@ -9,14 +9,14 @@ steps:
     pull: if-not-exists
     volumes:
       - name: docs
-        path: /docs
+        path: /opt/appdata/mkdocswiki
     commands:
       - pip install -U -r ./requirements.txt
       - mkdocs build
     when:
       event: push
       branch: main
-volumes:
-  - name: docs
-    host:
-      path: /opt/appdata/mkdocswiki
+#volumes:
+#  - name: docs
+#    host:
+#      path: /opt/appdata/mkdocswiki
