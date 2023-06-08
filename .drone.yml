@@ -8,8 +8,8 @@ steps:
     image: squidfunk/mkdocs-material:9.1.15
     pull: if-not-exists
     volumes:
-      - name: site
-        path: /site
+      - name: docs
+        path: /docs
     commands:
       - pip install -U -r ./requirements.txt
       - mkdocs build
@@ -17,6 +17,6 @@ steps:
       event: push
       branch: main
 volumes:
-  - name: site
+  - name: docs
     host:
       path: /opt/appdata/mkdocswiki
