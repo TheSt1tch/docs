@@ -4,22 +4,22 @@ type: docker
 name: build-home-docs
 
 steps:
-  - name: build-docs
-    image: squidfunk/mkdocs-material:9.1.15
-    pull: if-not-exists
-	  volumes:
-    - name: site
-      path: /site
-    commands:
-      - pip install -U -r ./requirements.txt
-      - mkdocs build
-      - cp -r site/ /site
-      - chmod -R 777 /site
-    when:
-      event: push
-      branch: main
+- name: build-docs
+  image: squidfunk/mkdocs-material:9.1.15
+  pull: if-not-exists
+  volumes:
+  - name: site
+    path: /site
+  commands:
+    - pip install -U -r ./requirements.txt
+    - mkdocs build
+    - cp -r site/ /site
+    - chmod -R 777 /site
+  when:
+    event: push
+    branch: main
       
 volumes:
-  - name: site
-    host:
-      path: /opt/appdata/mkdocswiki
+- name: site
+  host:
+    path: /opt/appdata/mkdocswiki
