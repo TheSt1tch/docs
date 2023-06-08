@@ -137,9 +137,4 @@ trakt:
     refresh_token:
     scope: public
     created_at:
-
-
-
-
-
 ```
