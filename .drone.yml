@@ -24,7 +24,7 @@ steps:
   image: appleboy/drone-telegram
   when:
     status:
-      - success
+      #- success
       - failure
   settings:
     # The secrets below can be entered from the Drone UI for this repo
