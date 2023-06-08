@@ -13,9 +13,12 @@ steps:
     commands:
       - pip install -U -r ./requirements.txt
       - mkdocs build
+      - cp -r site/ /docs
+      - chmod -R 777 /docs
     when:
       event: push
       branch: main
+      
 #volumes:
 #  - name: docs
 #    host:
