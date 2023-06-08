@@ -4,7 +4,7 @@ Plex можно устанавливать разными способами, ч
 
 [Получение Plex Claim](https://www.plex.tv/claim/)
 
-```yml
+```yaml
 version: "3.7"
 services:
   plex:
