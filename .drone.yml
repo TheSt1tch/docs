@@ -15,7 +15,7 @@ steps:
       - mkdocs build
     when:
       event: push
-      branch: master
+      branch: main
 volumes:
   - name: site
     host:
