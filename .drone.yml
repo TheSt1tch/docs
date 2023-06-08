@@ -13,17 +13,15 @@ steps:
   pull: if-not-exists
   volumes:
   - name: site
-    path: /drone/src/docs
+    path: /site
   commands:
   - pip install -U -r ./requirements.txt
   - mkdocs build
   when:
     event: push
     branch: master
-  #- cp -r site/ /site
-  #- chmod -R 777 /site
 
 volumes:
 - name: site
   host:
-    path: /opt/appdata/mkdocswiki/docs
+    path: /opt/appdata/mkdocswiki
