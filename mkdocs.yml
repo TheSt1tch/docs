@@ -60,6 +60,8 @@ nav:
     - Install Docker Compose: docker-compose.md
     - Linx Server: docker-compose/linx-server.md
     - Plex Meta Manager: docker-compose/plex-mm.md
+    - Traefik:
+      - Traefik Forward Auth: docker-compose/traefik-forward-auth.md
   #- Hardware:
   - Other:
     - SSL для сайта: other/ssl-for-site.md
