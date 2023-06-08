@@ -1,14 +1,19 @@
 ---
 kind: pipeline
 type: docker
-name: build
+name: build-home-docs
+
+platform:
+  os: linux
+  arch: arm64
+
 steps:
-- name: build
+- name: build-docs
   image: squidfunk/mkdocs-material:9.1.15
   pull: if-not-exists
   volumes:
   - name: site
-    path: /site
+    path: /drone/src/docs
   commands:
   - pip install -U -r ./requirements.txt
   - mkdocs build
@@ -17,7 +22,8 @@ steps:
     branch: master
   #- cp -r site/ /site
   #- chmod -R 777 /site
+
 volumes:
 - name: site
   host:
-    path: /opt/appdata/mkdocswiki
+    path: /opt/appdata/mkdocswiki/docs
