@@ -8,8 +8,8 @@ steps:
     image: squidfunk/mkdocs-material:9.1.15
     pull: if-not-exists
 	  volumes:
-      - name: site
-        path: /site
+    - name: site
+      path: /site
     commands:
       - pip install -U -r ./requirements.txt
       - mkdocs build
