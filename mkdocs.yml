@@ -60,7 +60,7 @@ nav:
     - Install Docker Compose: docker-compose.md
     - Linx Server: docker-compose/linx-server.md
     - Plex Meta Manager: docker-compose/plex-mm.md
-  - Hardware:
+  #- Hardware:
   - Other:
     - SSL для сайта: other/ssl-for-site.md
     - Ubuntu bash aliases: other/ubuntu-bash-aliases.md
