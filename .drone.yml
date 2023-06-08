@@ -19,4 +19,4 @@ steps:
 volumes:
   - name: site
     host:
-      path: /opt/appdata/mkdocswiki/docs
+      path: /opt/appdata/mkdocswiki
