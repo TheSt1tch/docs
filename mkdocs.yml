@@ -56,6 +56,7 @@ copyright: 2023 &copy; TheSt1tch - Licensed under GPLv3
 
 nav:
   - Welcome: index.md
-  - 🐳 Docker Compose: docker-compose.md
+  - 🐳 Docker Compose: 
+    - Install Docker Compose: docker-compose.md
     - Linx Server: docker-compose/linx-server.md
     - Plex Meta Manager: docker-compose/plex-mm.md
