@@ -29,7 +29,18 @@ theme:
     - navigation.instant
     - navigation.sections # prevents collapsible sections
     - navigation.indexes # section index pages
-    - navigation.expand #expands sections by default
+    #- navigation.expand #expands sections by default
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.pruning
+    - search.suggest
+    - search.share
+    - content.code.annotate
+    - content.code.copy
+    - header.autohide
+    - announce.dismiss
+    - toc.follow
   # insiders only
   #   - search.suggest
 
