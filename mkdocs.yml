@@ -5,7 +5,7 @@ edit_uri: edit/main/docs/
 
 theme:
   name: material
-  custom_dir: overrides
+  #custom_dir: overrides
   language: en
   #logo: images/site/logo.png
   favicon: images/assets/favicon.png
