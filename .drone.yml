@@ -13,7 +13,7 @@ steps:
     commands:
       - pip install -U -r ./requirements.txt
       - mkdocs build
-      - cp -r site/ /docs
+      - cp -r /drone/src/site /docs
       - chmod -R 777 /docs
     when:
       event: push
