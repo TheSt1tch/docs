@@ -46,7 +46,7 @@ theme:
   #   - search.suggest
 
 plugins:
-  - search
+  search:
     lang: 
       - ru
       - en
