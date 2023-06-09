@@ -3,6 +3,22 @@ repo_url: https://git.st1t.ru/thest1tch/docs
 repo_name: thest1tch/docs
 edit_uri: edit/main/docs/
 
+nav:
+  - Привет!: index.md
+  - 🐳 Docker Compose: 
+    - Install Docker Compose: docker-compose.md
+    - Linx Server: docker-compose/linx-server.md
+    - Samba: docker-compose/samba.md
+    - Media Server:
+      - Plex: docker-compose/plex.md
+      - Plex Meta Manager: docker-compose/plex-mm.md
+    - Traefik:
+      - Traefik Forward Auth: docker-compose/traefik-forward-auth.md
+  #- Hardware:
+  - Помойка:
+    - SSL для сайта: other/ssl-for-site.md
+    - Ubuntu bash aliases: other/ubuntu-bash-aliases.md
+
 theme:
   name: material
   #custom_dir: overrides
@@ -13,18 +29,32 @@ theme:
     repo: simple/gitea
     logo: fontawesome/regular/folder-open
   palette:
-    - scheme: default
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      scheme: default
+      toggle:
+        icon: material/brightness-auto
+        name: Follow system preferences
+
+    # Toggle light mode 
+    - media: "(prefers-color-scheme: light)"       
+      scheme: default
       primary: blue
       accent: teal
       toggle:
-        icon: material/weather-night
-        name: Switch to dark mode
-    - scheme: slate
+        icon: material/brightness-7
+        name: Испепели мои глаза!
+
+    # Toggle dark mode  
+    - media: "(prefers-color-scheme: dark)"      
+      scheme: slate
       toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
+        icon: material/brightness-4
+        name: Я люблю свои глаза!
+
   font:
     code: Jet Brains Mono
+
   features:
     - navigation.instant
     #- navigation.sections # prevents collapsible sections
@@ -50,6 +80,7 @@ plugins:
     lang: 
       - ru
       - en
+
 markdown_extensions:
   - abbr
   - admonition # enables coloured blocks mid article
@@ -69,18 +100,7 @@ markdown_extensions:
 
 copyright: 2023 &copy; TheSt1tch - Licensed under GPLv3
 
-nav:
-  - Welcome: index.md
-  - 🐳 Docker Compose: 
-    - Install Docker Compose: docker-compose.md
-    - Linx Server: docker-compose/linx-server.md
-    - Samba: docker-compose/samba.md
-    - Media Server:
-      - Plex: docker-compose/plex.md
-      - Plex Meta Manager: docker-compose/plex-mm.md
-    - Traefik:
-      - Traefik Forward Auth: docker-compose/traefik-forward-auth.md
-  #- Hardware:
-  - Other:
-    - SSL для сайта: other/ssl-for-site.md
-    - Ubuntu bash aliases: other/ubuntu-bash-aliases.md
+extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
