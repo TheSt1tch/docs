@@ -31,7 +31,7 @@ theme:
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
-      scheme: slate
+      scheme: default
       toggle:
         icon: material/brightness-auto
         name: Авто
