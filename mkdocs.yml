@@ -48,6 +48,8 @@ theme:
     # Toggle dark mode  
     - media: "(prefers-color-scheme: dark)"      
       scheme: slate
+      primary: blue
+      accent: teal
       toggle:
         icon: material/brightness-4
         name: Я люблю свои глаза!
