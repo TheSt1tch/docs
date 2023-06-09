@@ -6,11 +6,11 @@ edit_uri: edit/main/docs/
 theme:
   name: material
   #custom_dir: overrides
-  language: en
+  language: ru
   #logo: images/site/logo.png
   favicon: images/assets/favicon.png
   icon:
-    repo: fontawesome/brands/github
+    repo: simple/gitea
     logo: fontawesome/regular/folder-open
   palette:
     - scheme: default
@@ -27,13 +27,14 @@ theme:
     code: Jet Brains Mono
   features:
     - navigation.instant
-    - navigation.sections # prevents collapsible sections
+    #- navigation.sections # prevents collapsible sections
     - navigation.indexes # section index pages
     #- navigation.expand #expands sections by default
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
     - navigation.pruning
+    - navigation.path
     - search.suggest
     - search.share
     - content.code.annotate
@@ -45,7 +46,10 @@ theme:
   #   - search.suggest
 
 plugins:
-    - search
+  - search
+      lang: 
+        - ru
+        - en
 markdown_extensions:
   - abbr
   - admonition # enables coloured blocks mid article
