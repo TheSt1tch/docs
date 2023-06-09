@@ -31,10 +31,10 @@ theme:
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
-      scheme: default
+      scheme: slate
       toggle:
         icon: material/brightness-auto
-        name: Follow system preferences
+        name: Авто
 
     # Toggle light mode 
     - media: "(prefers-color-scheme: light)"       
