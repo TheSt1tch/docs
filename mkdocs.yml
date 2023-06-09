@@ -9,6 +9,8 @@ nav:
     - Install Docker Compose: docker-compose.md
     - Linx Server: docker-compose/linx-server.md
     - Samba: docker-compose/samba.md
+    - Redis: docker-compose/redis.md
+    - MotionEye: docker-compose/motioneye.md
     - Media Server:
       - Plex: docker-compose/plex.md
       - Plex Meta Manager: docker-compose/plex-mm.md

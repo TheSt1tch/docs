@@ -74,3 +74,27 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 Хотя это может быть незначительным риском для безопасности, все должно быть в порядке, если применяются другие [меры безопасности Docker](https://www.smarthomebeginner.com/traefik-docker-security-best-practices/) .
 
 `sudo timedatectl set-timezone America/New\_York`
+
+# Команды Docker
+
+Существует множество команд docker и docker compose, и их описание не является целью этого поста. Вы можете увидеть все возможные команды, используя следующую команду:
+
+`docker`
+
+Но вот несколько команд **docker** и **docker compose** для начала:
+
+-   `sudo docker info` — информация об установке докера.
+-   `sudo docker search IMAGE_NAME `— поиск определенных образов/контейнеров.
+-   `sudo docker start CONTAINER_NAME` — запустить один или несколько контейнеров.
+-   `sudo docker stop CONTAINER_NAME` — остановить один или несколько контейнеров.
+-   `sudo docker restart CONTAINER_NAME` — перезапустить один или несколько контейнеров.
+-   `sudo docker top CONTAINER_NAME` — просмотр запущенных процессов контейнера.
+-   `sudo docker rm CONTAINER_NAME` — удалить один или несколько контейнеров.
+-   `sudo docker pull CONTAINER_NAME` — извлекать обновленные образы из Docker Hub.
+-   `sudo docker network ls` — просмотреть все определенные сети докеров.
+-   `sudo docker ps -a` — просмотреть все запущенные контейнеры.
+-   `sudo docker logs CONTAINER_NAME` — просмотр журналов одного, нескольких или всех контейнеров.
+-   `sudo docker-compose up -d CONTAINER_NAME` — запустить определенные или все службы, определенные в docker-compose.yml.
+-   `sudo docker-compose down CONTAINER_NAME` — остановить определенные или все службы, определенные в docker-compose.yml.
+
+Обратите внимание, что в большинстве случаев **CONTAINER\_NAME** не является обязательным, и команда применяется ко всем возможным контейнерам, если имя контейнера не указано.
