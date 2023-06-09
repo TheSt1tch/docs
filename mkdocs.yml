@@ -47,9 +47,9 @@ theme:
 
 plugins:
   - search
-      lang: 
-        - ru
-        - en
+    lang: 
+      - ru
+      - en
 markdown_extensions:
   - abbr
   - admonition # enables coloured blocks mid article
