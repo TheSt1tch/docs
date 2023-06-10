@@ -16,7 +16,7 @@ nav:
       - Plex Meta Manager: docker-compose/plex-mm.md
     - Traefik:
       - Traefik Forward Auth: docker-compose/traefik-forward-auth.md
-  - :Ubuntu: Ubuntu 22:
+  - Ubuntu 22:
       - MariaDB: ubuntu/mariadb.md
   - Помойка:
     - SSL для сайта: other/ssl-for-site.md
