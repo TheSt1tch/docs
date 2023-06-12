@@ -85,10 +85,10 @@ theme:
   #   - search.suggest
 
 plugins:
-  search:
-    lang: 
-      - ru
-      - en
+  - search:
+      lang: 
+        - ru
+        - en
   - glightbox
   - blog
 
