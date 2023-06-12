@@ -10,12 +10,17 @@ steps:
   volumes:
   - name: site
     path: /site
+  - name: site-st1tru
+    path: /site-st1tru
   commands:
     - pip install -U -r ./requirements.txt
     - mkdocs build
     - cp -r site/ /site
+    - cp -r site/ /site-st1tru
     - chown 1000:1000 /site
+    - chown 1000:1000 /site-st1tru
     - chmod -R 777 /site
+    - chmod -R 777 /site-st1tru
   when:
     event: push
     branch: main
@@ -54,3 +59,6 @@ volumes:
 - name: site
   host:
     path: /opt/appdata/mkdocswiki
+- name: site-st1tru
+  host:
+    path: /opt/appdata/nginx/st1t.ru
