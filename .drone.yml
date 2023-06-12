@@ -39,7 +39,7 @@ steps:
     - chmod -R 777 /site
   when:
     event: push
-    branch: feature
+    branch: states
 
 - name: telgram_notify
   image: appleboy/drone-telegram
