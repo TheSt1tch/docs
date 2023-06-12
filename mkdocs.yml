@@ -14,6 +14,7 @@ nav:
     - Media Server:
       - Plex: docker-compose/plex.md
       - Plex Meta Manager: docker-compose/plex-mm.md
+      - Plex Trakt Sync: docker-compose/plextraktsync.md
     - Traefik:
       - Traefik Forward Auth: docker-compose/traefik-forward-auth.md
   - Ubuntu 22:
