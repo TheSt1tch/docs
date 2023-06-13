@@ -1,1 +1,3 @@
-asd
+# Blogs
+
+{{ blog_content }}

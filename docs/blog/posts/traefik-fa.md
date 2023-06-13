@@ -260,21 +260,20 @@ services:
 #### Шаг 3.4. Добавление Google OAuth для служб Docker
 
 Возьмем пример панели инструментов Traefik 2. Если вы следовали моему руководству по Traefik, теперь у вас должна быть базовая аутентификация с использованием промежуточного программного обеспечения:
-
+```
 ## Middlewares
-
 - "traefik.http.routers.traefik-rtr.middlewares=middlewares-basic-auth@file"
-
+```
 Или цепочка промежуточного программного обеспечения:
-
+```
 - "traefik.http.routers.traefik-rtr.middlewares=chain-basic-auth@file"
-
+```
 Мы уже определили цепочку промежуточного программного обеспечения для Traefik oauth (**chain-oauth**) выше.
 
 Перейти с базовой аутентификации на oauth теперь так же просто, как изменить  **chain-basic-auth**  на  **chain-oauth**  в файле  **docker-compose**  (показано ниже).
-
+```
 - "traefik.http.routers.traefik-rtr.middlewares=chain-oauth@file"
-
+```
 Итак, вот и все, вход и аутентификация на основе OAuth для стека обратного прокси-сервера Traefik.
 
 После этого используйте команду  **docker-compose up**.
@@ -288,39 +287,24 @@ services:
 Давайте для примера возьмем сервис ex1, работающий на другом хосте (192.168.1.100).
 
 Чтобы добавить к сервису возможность аутентификации Traefik OAuth2, вам нужно всего лишь создать промежуточное ПО маршрутизатора, как показано ниже.
-
+```
 http:
-
-routers:
-
-ex1-rtr:
-
-rule:  "Host(`ex1.{{env "DOMAINNAME_CLOUD_SERVER"}}`)"
-
-entryPoints:
-
-- https
-
-middlewares:
-
-- chain-oauth
-
-service: ex1-svc
-
-tls:
-
-certResolver: dns-cloudflare
-
-services:
-
-ex1-svc:
-
-loadBalancer:
-
-servers:
-
-- url:  "http://192.168.1.100:80"  # or whatever your external host's IP:port is
-
+  routers:
+    ex1-rtr:
+      rule:  "Host(`ex1.{{env "DOMAINNAME_CLOUD_SERVER"}}`)"
+      entryPoints:
+        - https
+      middlewares:
+        - chain-oauth
+      service: ex1-svc
+      tls:
+        certResolver: dns-cloudflare
+  services:
+    ex1-svc:
+      loadBalancer:
+        servers:
+          - url:  "http://192.168.1.100:80"  # or whatever your external host's IP:port is
+```
 Интерфейс ex1 будет доступен по адресу  **ex1.example.com**, при условии, что для переменной среды  **DOMAINNAME_CLOUD_SERVER**  установлено значение  **example.com**  и она передается в контейнер Traefik.
 
 Поскольку каталог rules является динамическим, просто добавив этот файл в этот каталог, мы создали маршрут. Вы должны иметь возможность подключиться к ex1 через Google OAuth2 без перезапуска Traefik!
@@ -348,12 +332,13 @@ servers:
 Обратите внимание, что  **uri**  в логах может содержать ключ API (X-Api-Key:[apikey]). Таким образом, вы можете установить использование обхода на основе этого следующим образом. На примере файла middleware сервиса ex1:
 
 В строчку
-
+```
 rule: "Host(`ex1.{{env "DOMAINNAME_CLOUD_SERVER"}}`)"
-
+```
 Дописываем
-
+```
 rule: "Host(`ex1.{{env "DOMAINNAME_CLOUD_SERVER"}}`) && Headers(`X-Api-Key`, `$API_KEY`)"
+```
 
 Перезапустите контейнер OAuth и попробуйте сейчас получить доступ к ex1 через приложение и браузер. Браузер должен представить логин OAuth, а приложение должно направить вас напрямую к сервису.
 
