@@ -19,7 +19,11 @@ nav:
     - Traefik:
       - Traefik Forward Auth: docker-compose/traefik-forward-auth.md
   - Ubuntu 22:
+      - HPE:
+          - Management Component Pack: ubuntu/hpe/hpe-mcp.md
       - MariaDB: ubuntu/mariadb.md
+      - Telegraf: ubuntu/telegraf.md
+      - Docker+UFW: ubuntu/docker-ufw.md
   - Proxmox:
       - CT Template: proxmox/ct-template.md
   - Помойка:
