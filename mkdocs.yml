@@ -24,6 +24,7 @@ nav:
       - MariaDB: ubuntu/mariadb.md
       - Telegraf: ubuntu/telegraf.md
       - Docker+UFW: ubuntu/docker-ufw.md
+      - Монтирование CIFS: ubuntu/mount-cifs.md
   - Proxmox:
       - CT Template: proxmox/ct-template.md
   - Помойка:
@@ -113,7 +114,8 @@ markdown_extensions:
       toc_depth: 4
   - pymdownx.highlight: # code highlighting
       linenums: true
-  - pymdownx.tabbed # enables tabs for embedded blocks
+  - pymdownx.tabbed: # enables tabs for embedded blocks
+      alternate_style: true 
   - pymdownx.snippets
   - pymdownx.superfences # allows for the nesting of code blocks inside other blocks
   - pymdownx.keys
