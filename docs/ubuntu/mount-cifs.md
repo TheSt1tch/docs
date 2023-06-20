@@ -2,13 +2,13 @@
 
 Для этой цели нам потребуется установленный пакет `cifs-utils`, установленный командой:
 === "в Ubuntu и Debian"
-```bash
-sudo apt-get install cifs-utils ntfs-3g ntfs-confiп
-```
+    ```bash
+    sudo apt-get install cifs-utils ntfs-3g ntfs-confiп
+    ```
 === "в Fedora, CentOS и других RedHat based дистрибутивах"
-```bash
-sudo yum install cifs-utils ntfs-3g ntfs-confi
-```
+    ```bash
+    sudo yum install cifs-utils ntfs-3g ntfs-confi
+    ```
 Что нужно чтобы монтировать расшаренные папки вручную. Потребуется создать путь куда будем монтировать SMB-папку, пусть это, к примеру, будет `/mnt/sharefolder`:
 ```bash
 sudo mkdir /mnt/sharefolder
@@ -77,13 +77,13 @@ sudo mount -a
 ```
 Также к этому стоит добавить, что если вы хотите получать доступ к windows-шаре не через ip-адрес, а через имя машины, то вам потребуется установить winbind:
 === "в Debian-based"
-```bash
-sudo apt-get install winbind
-```
+    ```bash
+    sudo apt-get install winbind
+    ```
 === "в RedHat-based"
-```bash
-sudo yum install samba-winbind
-```
+    ```bash
+    sudo yum install samba-winbind
+    ```
 После этого отредактируйте файл **/etc/nsswitch.conf**:
 ```bash
 sudo nano /etc/nsswitch.conf
