@@ -269,32 +269,32 @@ admin:$apr1$vDSqkf.v$GTJOtsd9CBiAFFnHTI2Ds1
 - `traefik.http.routers.traefik.middlewares=traefik-auth` — указываем что роутер `traefik` использует только что-то созданный middleware.
 
 ??? note "Весь docker-compose.yml"
-  ```yaml
-  version: '3.9'
-  services:
-    traefik:
-      image: traefik:v2.10
-      container_name: traefik
-      restart: unless-stopped
-      security_opt:
-        - no-new-privileges:true
-      ports:
-        - 80:80
-        - 443:443
-      volumes:
-        - /etc/localtime:/etc/localtime:ro
-        - /var/run/docker.sock:/var/run/docker.sock:ro
-        - ./data/traefik.yml:/traefik.yml:ro
-        - ./data/acme.json:/acme.json
-      labels:
-        - "traefik.enable=true"
-        - "traefik.http.routers.traefik.entrypoints=https"
-        - "traefik.http.routers.traefik.rule=Host(`traefik.example.com`)"
-        - "traefik.http.routers.traefik.tls=true"
-        - "traefik.http.routers.traefik.tls.certresolver=letsEncrypt"
-        - "traefik.http.routers.traefik.service=api@internal"
-        - "traefik.http.services.traefik-traefik.loadbalancer.server.port=888"
-  ```
+	```yaml
+	version: '3.9'
+	services:
+	  traefik:
+	    image: traefik:v2.10
+	    container_name: traefik
+	    restart: unless-stopped
+	    security_opt:
+	      - no-new-privileges:true
+	    ports:
+	      - 80:80
+	      - 443:443
+	    volumes:
+	      - /etc/localtime:/etc/localtime:ro
+	      - /var/run/docker.sock:/var/run/docker.sock:ro
+	      - ./data/traefik.yml:/traefik.yml:ro
+	      - ./data/acme.json:/acme.json
+	    labels:
+	      - "traefik.enable=true"
+	      - "traefik.http.routers.traefik.entrypoints=https"
+	      - "traefik.http.routers.traefik.rule=Host(`traefik.example.com`)"
+	      - "traefik.http.routers.traefik.tls=true"
+	      - "traefik.http.routers.traefik.tls.certresolver=letsEncrypt"
+	      - "traefik.http.routers.traefik.service=api@internal"
+	      - "traefik.http.services.traefik-traefik.loadbalancer.server.port=888"
+	```
 
 Теперь при попытке доступа к дашборду у нас спросят логин и пароль.
 
