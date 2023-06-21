@@ -6,8 +6,8 @@ edit_uri: edit/main/docs/
 
 nav:
   - Привет!: index.md
-  - 🐳 Docker Compose: 
-    - Install Docker Compose: docker-compose.md
+  - 🐳 Docker: 
+    - Install: docker.md
     - Linx Server: docker-compose/linx-server.md
     - Samba: docker-compose/samba.md
     - Redis: docker-compose/redis.md
@@ -17,6 +17,7 @@ nav:
       - Plex Meta Manager: docker-compose/plex-mm.md
       - Plex Trakt Sync: docker-compose/plextraktsync.md
     - Traefik:
+      - docker-compose/traefik.md
       - Traefik Forward Auth: docker-compose/traefik-forward-auth.md
   - Ubuntu 22:
       - HPE:
@@ -30,6 +31,9 @@ nav:
   - Помойка:
     - SSL для сайта: other/ssl-for-site.md
     - Ubuntu bash aliases: other/ubuntu-bash-aliases.md
+  - Сеть:
+    - Mikrotik:
+      - Wireguard: network/mikrotik/wireguard.md
   - Блог:
     - Начальная: blog/index.md
     - Traefik FA: blog/posts/traefik-fa.md
