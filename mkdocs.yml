@@ -85,7 +85,7 @@ theme:
 
   features:
     #- navigation.instant
-    #- navigation.sections # prevents collapsible sections
+    - navigation.sections # prevents collapsible sections
     - navigation.indexes # section index pages
     - navigation.expand #expands sections by default
     - navigation.tabs
