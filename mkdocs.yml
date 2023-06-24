@@ -7,18 +7,20 @@ edit_uri: edit/main/docs/
 nav:
   - Привет!: index.md
   - 🐳 Docker: 
-    - Install: docker.md
-    - Linx Server: docker-compose/linx-server.md
-    - Samba: docker-compose/samba.md
-    - Redis: docker-compose/redis.md
-    - MotionEye: docker-compose/motioneye.md
-    - Media Server:
-      - Plex: docker-compose/plex.md
-      - Plex Meta Manager: docker-compose/plex-mm.md
-      - Plex Trakt Sync: docker-compose/plextraktsync.md
-    - Traefik:
-      - docker-compose/traefik.md
+    - Подготовка:
+      - Install: docker.md
+    - В начале:
+      - Traefik: docker-compose/traefik.md
       - Traefik Forward Auth: docker-compose/traefik-forward-auth.md
+    - Сервисы: 
+      - Linx Server: docker-compose/linx-server.md
+      - Samba: docker-compose/samba.md
+      - Redis: docker-compose/redis.md
+      - MotionEye: docker-compose/motioneye.md
+      - Media Server:
+        - Plex: docker-compose/plex.md
+        - Plex Meta Manager: docker-compose/plex-mm.md
+        - Plex Trakt Sync: docker-compose/plextraktsync.md
   - Ubuntu 22:
       - HPE:
           - Management Component Pack: ubuntu/hpe/hpe-mcp.md
@@ -119,7 +121,7 @@ markdown_extensions:
   - meta # adds support for front matter
   - toc:
       permalink: true
-      toc_depth: 4
+      toc_depth: 3
   - pymdownx.highlight: # code highlighting
       linenums: true
   - pymdownx.tabbed: # enables tabs for embedded blocks
