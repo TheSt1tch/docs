@@ -58,11 +58,11 @@ theme:
   name: material
   #custom_dir: overrides
   language: ru
-  #logo: images/site/logo.png
+  logo: images/st1t_white.png
   favicon: images/st1t_blue.png
   icon:
     repo: simple/gitea
-    logo: images/st1t_white.png
+    #logo: images/st1t_white.png
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
