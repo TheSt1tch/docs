@@ -59,10 +59,10 @@ theme:
   #custom_dir: overrides
   language: ru
   #logo: images/site/logo.png
-  favicon: images/assets/favicon.png
+  favicon: images/st1t_blue.png
   icon:
     repo: simple/gitea
-    logo: fontawesome/regular/folder-open
+    logo: images/st1t_white.png
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
