@@ -33,7 +33,7 @@ nav:
     - Ubuntu bash aliases: other/ubuntu-bash-aliases.md
     - ТСД:
       - Прошивка MC9090 на CE7.0: 
-        - other/tsd/flashing-9200-ce7.md
+        - other/tsd/index.md
         - Переустановка ОС: reinstall-ce7.md
   - Сеть:
     - Mikrotik:
