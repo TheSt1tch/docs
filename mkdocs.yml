@@ -36,7 +36,8 @@ nav:
     - ТСД:
       - Прошивка MC9090 на CE7.0: 
         - other/tsd/index.md
-        - Переустановка ОС: reinstall-ce7.md
+        - Переустановка ОС: other/tsd/reinstall-ce7.md
+        - Настройка ТСД: other/tsd/configure-ce7.md
   - Сеть:
     - Mikrotik:
       - Wireguard: network/mikrotik/wireguard.md
@@ -120,7 +121,7 @@ markdown_extensions:
   - footnotes
   - meta # adds support for front matter
   - toc:
-      permalink: true
+      permalink: false
       toc_depth: 3
   - pymdownx.highlight: # code highlighting
       linenums: true
