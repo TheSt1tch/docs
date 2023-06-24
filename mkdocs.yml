@@ -31,6 +31,10 @@ nav:
   - Помойка:
     - SSL для сайта: other/ssl-for-site.md
     - Ubuntu bash aliases: other/ubuntu-bash-aliases.md
+    - ТСД:
+      - Прошивка MC9090 на CE7.0: 
+        - other/tsd/flashing-9200-ce7.md
+        - Переустановка ОС: reinstall-ce7.md
   - Сеть:
     - Mikrotik:
       - Wireguard: network/mikrotik/wireguard.md
