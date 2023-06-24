@@ -38,9 +38,18 @@ nav:
         - other/tsd/index.md
         - Переустановка ОС: other/tsd/reinstall-ce7.md
         - Настройка ТСД: other/tsd/configure-ce7.md
+        - Настройка Wi-Fi: other/tsd/configure-wifi.md
+        - Настройка TelnetCE: other/tsd/configure-telnetce.md
+        - Установка TelnetCE: other/tsd/install-telnetce.md
+    - Synology:
+      - HPE Microserver Gen10: other/synology/install-hpe-ms-gen10
+        
   - Сеть:
     - Mikrotik:
       - Wireguard: network/mikrotik/wireguard.md
+    - Ubiquiti:
+      - Добавление новой точки: network/ubi/add-new-ap.md
+      - Ошибка обновления: network/ubi/failed-update.md
   - Блог:
     - Начальная: blog/index.md
     - Traefik FA: blog/posts/traefik-fa.md
@@ -137,3 +146,6 @@ extra:
   status:
     new: Recently added
     deprecated: Deprecated
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/xtsgTBf
