@@ -69,4 +69,3 @@ servers:
 ```
 
 [Github](https://github.com/Taxel/PlexTraktSync){ .md-button .md-button--primary }
-Github
