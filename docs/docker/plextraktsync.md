@@ -68,5 +68,5 @@ servers:
     - http://plex:32400
 ```
 
-[Github :fontawesome-brands-github:](https://github.com/Taxel/PlexTraktSync){ .md-button .md-button--primary }
+[Github](https://github.com/Taxel/PlexTraktSync){ .md-button .md-button--primary }
 Github
