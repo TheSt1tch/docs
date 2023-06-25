@@ -140,6 +140,9 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.superfences # allows for the nesting of code blocks inside other blocks
   - pymdownx.keys
+  - pymdownx.emoji:
+      emoji_index: "!!python/name:materialx.emoji.twemoji"
+      emoji_generator: "!!python/name:materialx.emoji.to_svg"
 
 copyright: 2023 &copy; TheSt1tch - Licensed under GPLv3
 
