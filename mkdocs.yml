@@ -8,19 +8,20 @@ nav:
   - Привет!: index.md
   - 🐳 Docker: 
     - Подготовка:
-      - Install: docker.md
+      - Установка: docker.md
+      - Безопасность: docker/security.md
     - В начале:
-      - Traefik: docker-compose/traefik.md
-      - Traefik Forward Auth: docker-compose/traefik-forward-auth.md
+      - Traefik: docker/traefik.md
+      - Traefik Forward Auth: docker/traefik-forward-auth.md
     - Сервисы: 
-      - Linx Server: docker-compose/linx-server.md
-      - Samba: docker-compose/samba.md
-      - Redis: docker-compose/redis.md
-      - MotionEye: docker-compose/motioneye.md
+      - Linx Server: docker/linx-server.md
+      - Samba: docker/samba.md
+      - Redis: docker/redis.md
+      - MotionEye: docker/motioneye.md
       - Media Server:
-        - Plex: docker-compose/plex.md
-        - Plex Meta Manager: docker-compose/plex-mm.md
-        - Plex Trakt Sync: docker-compose/plextraktsync.md
+        - Plex: docker/plex.md
+        - Plex Meta Manager: docker/plex-mm.md
+        - Plex Trakt Sync: docker/plextraktsync.md
   - Ubuntu 22:
       - HPE:
           - Management Component Pack: ubuntu/hpe/hpe-mcp.md
