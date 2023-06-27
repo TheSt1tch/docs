@@ -74,10 +74,10 @@
 
 Если у Вас много точек и так же для удобства настройки и дальнейшего обслуживания я рекомендую создать Вам подобную таблицу:
 
-| Name | Address | Endpoint | EndpointIp | AllowedIPs | ListenPort | PrivateKey | PublicKey | |
-|--|--|--|--|--|--|--|--|--|--|--|--|--|--|--|
-| PointA | 10.10.10.1 | www.pointA.com | 222.222.222.222 | 10.10.11.1/32,192.168.200.0/24 | 13231 | ucwL8IWLNYrPHOu9qk70ZOagPgjJXhzvvkg7ZLooaj4= |
-| PointB| 10.10.11.1 | www.pointB.com | 111.111.111.111 | 10.10.10.1/32,192.168.100.0/24 | 13231 | FxNwKIFINspWh5pkoFpS5LzNKMDjkqcAV/Ypo2Ed8ys= |
+| Name | Address | Endpoint | EndpointIp | AllowedIPs | ListenPort | PrivateKey | PublicKey |
+|--|--|--|--|--|--|--|--|
+| PointA | 10.10.10.1 | www.pointA.com | 222.222.222.222 | 10.10.11.1/32,192.168.200.0/24 | 13231 | `<your_key>` | `ucwL8IWLNYrPHOu9qk70ZOagPgjJXhzvvkg7ZLooaj4=` |
+| PointB | 10.10.11.1 | www.pointB.com | 111.111.111.111 | 10.10.10.1/32,192.168.100.0/24 | 13231 | `<your_key>` | `FxNwKIFINspWh5pkoFpS5LzNKMDjkqcAV/Ypo2Ed8ys=` |
 
 Вам так будет проще ориентироваться в дальнейшем
 

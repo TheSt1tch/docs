@@ -22,6 +22,10 @@ nav:
         - Plex: docker/plex.md
         - Plex Meta Manager: docker/plex-mm.md
         - Plex Trakt Sync: docker/plextraktsync.md
+      - Nextcloud:
+        - docker/nextcloud/index.md
+        - During Scan: docker/nextcloud/during-scan.md
+        - PHP imagick: docker/nextcloud/php-imagick.md
   - Ubuntu 22:
       - HPE:
           - Management Component Pack: ubuntu/hpe/hpe-mcp.md
