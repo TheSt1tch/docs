@@ -48,6 +48,16 @@ nav:
         - Установка TelnetCE: other/tsd/install-telnetce.md
     - Synology:
       - HPE Microserver Gen10: other/synology/install-hpe-ms-gen10
+    - Office:
+      - Excel:
+        - other/office/excel/index.md
+        - VBA Защита страницы: other/office/excel/vba-security-page.md
+        - VBA Исправление примечаний: other/office/excel/vba-align-comments.md
+        - VBA Создание файла: other/office/excel/vba-create-file.md
+        - VBA Открытие файла: other/office/excel/vba-open-file.md
+        - VBA Отправка почты: other/office/excel/vba-send-email.md
+        - VBA Прогресс бар: other/office/excel/vba-progress-bar.md
+        - VBA Удаление пароля: other/office/excel/vba-remove-pass.md
         
   - Сеть:
     - Mikrotik:
