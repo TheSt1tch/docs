@@ -1,3 +1,4 @@
+
 # Запуск своего сервера игры Valheim
 
 ![Valheim](https://raw.githubusercontent.com/lloesche/valheim-server-docker/main/misc/Logo_valheim.png)
@@ -180,7 +181,15 @@ sudo tar -czvf valheim-server.tar.gz config
 ```
 tar -ztvf valheim-server.tar.gz
 ```
+---
+## Полезности
 
+- [Генератор карты](https://valheim-map.world/)
+- Моды для сервера или клиента:
+  - [Nexusmods](https://www.nexusmods.com/valheim/mods/)
+  - [Thunderstore](https://valheim.thunderstore.io/package/)
+
+---
 
 [Github](https://github.com/lloesche/valheim-server-docker){ .md-button .md-button--primary }
 
