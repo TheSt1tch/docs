@@ -83,7 +83,7 @@ nav:
 
 theme:
   name: material
-  #custom_dir: overrides
+  custom_dir: overrides
   language: ru
   logo: images/st1t_white.png
   favicon: images/st1t_blue.png
@@ -181,3 +181,17 @@ extra:
   social:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/xtsgTBf
+  analytics:
+    provider: google
+    property: G-E6GYT2D13K
+    feedback:
+      title: Вам нравится эта страница?
+      ratings:
+        - icon: material/thumb-up-outline
+          name: Да
+          data: 1
+          note: Спасибо! 
+        - icon: material/thumb-down-outline
+          name: Нет
+          data: 0
+          note: =_=
