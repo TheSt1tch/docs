@@ -4,7 +4,7 @@ type: docker
 name: build-home-docs
 
 steps:
-- name: check-feature
+- name: build main
   image: squidfunk/mkdocs-material:9.1.17
   pull: if-not-exists
   volumes:
@@ -16,13 +16,13 @@ steps:
     - cp -r site/ /site
     - chown 1000:1000 /site
     - chmod -R 777 /site
-#  when:
-#    event: 
-#      - push
-#    branch: 
-#      - states/*
+  when:
+    event: 
+      - push
+    branch: 
+      - main
 
-- name: check-feature
+- name: build states
   image: git.st1t.ru/thest1tch/mkdocs-material:latest
   pull: if-not-exists
   volumes:
