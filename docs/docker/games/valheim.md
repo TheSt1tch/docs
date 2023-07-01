@@ -82,7 +82,7 @@ docker-compose up
 
 Если у вас есть существующий мир в системе Windows, вы можете скопировать его, например:
 `C:\Users\Lukas\AppData\LocalLow\IronGate\Valheim\worlds_local` в 
-`$HOME/valheim-server/config/worlds_local` , и запустить образ с `$HOME/valheim-server/configтомом`, смонтированным `/config` внутри контейнера. 
+`$HOME/valheim-server/config/worlds_local` , и запустить образ с `$HOME/valheim-server/config`томом, смонтированным `/config` внутри контейнера. 
 Каталог контейнера `/opt/valheim` содержит загруженный сервер. При желании его можно смонтировать в томе, чтобы не загружать сервер при каждом новом запуске.
 
 ```
@@ -167,3 +167,19 @@ $ sudo systemctl start valheim.service
 В перменных выше, указана чистота проверки обновлений "30 5 * * *" - это означает, что сервер будет првоерять обновления раз в сутки, в 5:30. Чтобы было проще указывать параметры cron, я советую использовать [crontab.guru](https://crontab.guru/)
 
 [Github](https://github.com/lloesche/valheim-server-docker){ .md-button .md-button--primary }
+
+## Бекап сервера, когда наигрались.
+
+Какой бы не была эта игра прекрасной, приходит время закончить играть в нее. Я не хочу в рамках этого руководства рассказывать в чем ее проблема для долгой игры. Вы можете и сами почитать отрицательные отзывы в Steam. Скажу лишь, что у меня и 2 моих друзей сгорели жепы в последней добавленной локации Mistland. Но, мы не бросем эту игру и вернемся в нее еще. 
+
+Для того чтобы сохранить ваш сервер или перенести куда либо еще, нужно забекапить папку `$HOME/valheim-server/config`:
+
+```
+cd $HOME/valheim-server
+sudo tar -czvf valheim-server.tar.gz config
+```
+проверить созданный архив можно командой
+```
+tar -ztvf valheim-server.tar.gz
+```
+
