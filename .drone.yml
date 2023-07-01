@@ -17,8 +17,10 @@ steps:
     - chown 1000:1000 /site
     - chmod -R 777 /site
   when:
-    event: push
-    branch: states/*
+    event: 
+      - push
+    branch: 
+      - states/*
 
 - name: telgram_notify
   image: appleboy/drone-telegram
