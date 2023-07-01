@@ -16,6 +16,24 @@ steps:
     - cp -r site/ /site
     - chown 1000:1000 /site
     - chmod -R 777 /site
+#  when:
+#    event: 
+#      - push
+#    branch: 
+#      - states/*
+
+- name: check-feature
+  image: git.st1t.ru/thest1tch/mkdocs-material:latest
+  pull: if-not-exists
+  volumes:
+  - name: site
+    path: /site
+  commands:
+    #- pip install -U -r ./requirements.txt
+    - mkdocs build
+    - cp -r site/ /site
+    - chown 1000:1000 /site
+    - chmod -R 777 /site
   when:
     event: 
       - push
