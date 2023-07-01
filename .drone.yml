@@ -4,27 +4,6 @@ type: docker
 name: build-home-docs
 
 steps:
-- name: build-docs
-  image: squidfunk/mkdocs-material:9.1.17
-  pull: if-not-exists
-  volumes:
-  - name: site
-    path: /site
-  - name: site-st1tru
-    path: /site-st1tru
-  commands:
-    - pip install -U -r ./requirements.txt
-    - mkdocs build
-    - cp -r site/ /site
-    - cp -r site/ /site-st1tru
-    - chown 1000:1000 /site
-    - chown 1000:1000 /site-st1tru
-    - chmod -R 777 /site
-    - chmod -R 777 /site-st1tru
-  when:
-    event: push
-    branch: main
-
 - name: check-feature
   image: squidfunk/mkdocs-material:9.1.17
   pull: if-not-exists
