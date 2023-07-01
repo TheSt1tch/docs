@@ -64,6 +64,10 @@ nav:
       - Grandstream:
         - Provisioning через TFTP: other/phone/grandstream/provisioning.md
         - Пример конфигурации: other/phone/grandstream/example-config.md
+      - Ipecs-MG:
+        - Общие настройки: other/phone/ipecs-mg/general.md
+        - Книги: other/phone/ipecs-mg/books.md
+        - Голосовые приветствия: other/phone/ipecs-mg/voice.md
   - Сеть:
     - Mikrotik:
       - Wireguard: network/mikrotik/wireguard.md

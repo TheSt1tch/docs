@@ -1,0 +1,2 @@
+- [Администрирование АТС](https://kaskadkm.ru/tel_s/instr/iPECS-MG_RU_v1.7.pdf)
+- [Web-администрирование](https://deace.by/files/lg/mg/RU_Web.pdf)
