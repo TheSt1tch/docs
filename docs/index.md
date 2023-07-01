@@ -1,10 +1,12 @@
-# Welcome to MkDocs
+# Приветствую на моем сайт
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Данный ресурс создан для структурирования моих знаний в различных областях IT. 
 
-## Commands
+Прошло мого времени, прежде чем я пришел к такому виду. До этого были Mediawiki, Dokuwiki, WikiJS, Wordpress.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Сейчас MkDocs, но я изучаю еще Docusaurus
+
+Надеюсь, что статьи будут полезны.
+
+Для связи: https://t.me/thest1tch
+

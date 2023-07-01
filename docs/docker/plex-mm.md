@@ -138,3 +138,49 @@ trakt:
     scope: public
     created_at:
 ```
+
+Для сериалов:
+
+```yaml
+  Сериалы:
+    metadata_path:
+    - file: config/TV-Shows/Collections.yml
+    - folder: config/TV-Shows/Metadata/Anime
+    - folder: config/TV-Shows/Metadata/TV
+    - pmm: basic
+    - pmm: imdb
+    overlay_path:
+    - remove_overlays: false
+    - reapply_overlay: false
+    - pmm: ratings
+      template_variables:
+        rating1: critic
+        rating1_image: imdb
+        rating2: audience
+        rating2_image: trakt
+        rating3: user
+        rating3_image: tmdb
+        horizontal_position: right
+    - pmm: resolution
+      template_variables:
+        overlay_level: season
+    - pmm: resolution
+      template_variables:
+        overlay_level: episode
+    - pmm: ratings                                                       # 3, 4
+      template_variables:
+        rating1: audience
+        rating1_image: trakt
+        horizontal_position: right                                     # the set of ratings is on the right of the poster
+        overlay_level: episode
+    - pmm: status
+      template_variables:
+        font_size: 75
+        #font: config/fonts/Juventus-Fans-Bold.ttf
+        back_color: "#262626" # darker
+        back_width: 1920
+        back_height: 125
+        horizontal_align: center
+        vertical_align: top
+        vertical_offset: 0
+```
