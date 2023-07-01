@@ -14,7 +14,7 @@ Worksheets("Лист1").Protect Password:="123"
 
 Нажмите `Alt+F11`, чтобы попасть в редактор Visual Basic. Затем в левом верхнем углу в окне Project Explorer (если его не видно, то нажмите Ctrl+R) модуль ЭтаКнига (ThisWorkbook) и откройте двойным щелчком:
 
-![]( ../../images/other/office/excel_vba_01.png){ loading=lazy }
+![](../../../images/other/office/excel_vba_01.png){ loading=lazy }
 
 
 Вставьте этот код:

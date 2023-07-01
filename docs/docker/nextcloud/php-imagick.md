@@ -2,7 +2,7 @@
 
 При использовании официального Nextcloud образа Docker вы увидите сообщение вроде:
 
-![](../images/docker/nextcloud/nextcloud-docker-php-imagick.png)
+![](../images/docker/nextcloud-docker-php-imagick.png)
 
 Чтобы исправить это предупреждение в docker нужно установить пакет `libmagickcore-6.q16-6-extra`:
 
