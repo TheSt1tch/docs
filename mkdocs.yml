@@ -31,6 +31,7 @@ nav:
   - Ubuntu 22:
       - HPE:
           - Management Component Pack: ubuntu/hpe/hpe-mcp.md
+          - HP iLO: ubuntu/hpe/latest-hpilo.md
       - MariaDB: ubuntu/mariadb.md
       - Telegraf: ubuntu/telegraf.md
       - Docker+UFW: ubuntu/docker-ufw.md
