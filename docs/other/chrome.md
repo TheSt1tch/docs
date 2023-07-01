@@ -8,12 +8,3 @@ Google Chrome
 2.  далее для функции Hardware Media Key Handling вместо значения «`Default`» устанавливаем «`Disabled`
 3.  перезапускаем Chrome, чтобы активировать изменение.
 
-
-
-<details><summary>report - click this</summary>
-<code>
-cpu_adam ............... [NO] ....... [OKAY]
-cpu_adagrad ............ [NO] ....... [OKAY]
-fused_adam ............. [NO] ....... [OKAY]
-</code>
-</details>

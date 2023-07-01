@@ -37,7 +37,7 @@ nav:
       - Монтирование CIFS: ubuntu/mount-cifs.md
   - Proxmox:
       - CT Template: proxmox/ct-template.md
-  - Помойка:
+  - Другое:
     - SSL для сайта: other/ssl-for-site.md
     - Ubuntu bash aliases: other/ubuntu-bash-aliases.md
     - ТСД:
@@ -60,6 +60,9 @@ nav:
         - VBA Отправка почты: other/office/excel/vba-send-email.md
         - VBA Прогресс бар: other/office/excel/vba-progress-bar.md
         - VBA Удаление пароля: other/office/excel/vba-remove-pass.md
+    - Телефоны:
+      - Grandstream:
+        - Provisioning через TFTP: other/phone/grandstream/provisioning.md
         
   - Сеть:
     - Mikrotik:
