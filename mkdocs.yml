@@ -41,17 +41,16 @@ nav:
     - SSL для сайта: other/ssl-for-site.md
     - Ubuntu bash aliases: other/ubuntu-bash-aliases.md
     - ТСД:
-      - Прошивка MC9090 на CE7.0: 
-        - other/tsd/index.md
-        - Переустановка ОС:
-          - CE 5.0: other/tsd/reinstall-os/ce5.md
-          - CE 7.0: other/tsd/reinstall-os/ce7.md
-          - WM 6.1: other/tsd/reinstall-os/m61.md
-        - Настройка ТСД: other/tsd/config-ce.md
-        - Настройка Wi-Fi: other/tsd/config-wifi.md
-        - Настройка TelnetCE: other/tsd/config-telnetce.md
-        - Установка TelnetCE: other/tsd/install-telnetce.md
-        - Траблшутинг: other/tsd/troubleshooting.md
+      - other/tsd/index.md
+      - Переустановка ОС:
+        - CE 5.0: other/tsd/reinstall-os/ce5.md
+        - CE 7.0: other/tsd/reinstall-os/ce7.md
+        - WM 6.1: other/tsd/reinstall-os/m61.md
+      - Настройка ТСД: other/tsd/config-ce.md
+      - Настройка Wi-Fi: other/tsd/config-wifi.md
+      - Настройка TelnetCE: other/tsd/config-telnetce.md
+      - Установка TelnetCE: other/tsd/install-telnetce.md
+      - Траблшутинг: other/tsd/troubleshooting.md
     - Synology:
       - HPE Microserver Gen10: other/synology/install-hpe-ms-gen10.md
     - Office:
