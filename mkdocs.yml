@@ -78,8 +78,7 @@ nav:
       - Добавление новой точки: network/ubi/add-new-ap.md
       - Ошибка обновления: network/ubi/failed-update.md
   - Блог:
-    - Начальная: blog/index.md
-    - Traefik FA: blog/posts/traefik-fa.md
+    - Blog: blog/index.md
 
 
 theme:
