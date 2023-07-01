@@ -29,7 +29,6 @@ steps:
   - name: site
     path: /site
   commands:
-    #- pip install -U -r ./requirements.txt
     - mkdocs build
     - cp -r site/ /site
     - chown 1000:1000 /site

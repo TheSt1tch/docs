@@ -83,7 +83,7 @@ nav:
 
 theme:
   name: material
-  custom_dir: overrides
+  theme_dir: overrides
   language: ru
   logo: images/st1t_white.png
   favicon: images/st1t_blue.png
