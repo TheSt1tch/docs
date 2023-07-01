@@ -63,7 +63,7 @@ nav:
     - Телефоны:
       - Grandstream:
         - Provisioning через TFTP: other/phone/grandstream/provisioning.md
-        
+        - Пример конфигурации: other/phone/grandstream/example-config.md
   - Сеть:
     - Mikrotik:
       - Wireguard: network/mikrotik/wireguard.md
