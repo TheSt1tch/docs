@@ -5,7 +5,7 @@ name: build-home-docs
 
 steps:
 - name: build-docs
-  image: squidfunk/mkdocs-material:9.1.15
+  image: squidfunk/mkdocs-material:9.1.17
   pull: if-not-exists
   volumes:
   - name: site
@@ -26,7 +26,7 @@ steps:
     branch: main
 
 - name: check-feature
-  image: squidfunk/mkdocs-material:9.1.15
+  image: squidfunk/mkdocs-material:9.1.17
   pull: if-not-exists
   volumes:
   - name: site
