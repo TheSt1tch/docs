@@ -1,36 +1,93 @@
-site_name: Docs St1t.ru
+site_name: St1t.ru
+site_url: https://st1t.ru
 repo_url: https://git.st1t.ru/thest1tch/docs
 repo_name: thest1tch/docs
 edit_uri: edit/main/docs/
 
 nav:
   - Привет!: index.md
-  - 🐳 Docker Compose: 
-    - Install Docker Compose: docker-compose.md
-    - Linx Server: docker-compose/linx-server.md
-    - Samba: docker-compose/samba.md
-    - Redis: docker-compose/redis.md
-    - MotionEye: docker-compose/motioneye.md
-    - Media Server:
-      - Plex: docker-compose/plex.md
-      - Plex Meta Manager: docker-compose/plex-mm.md
-    - Traefik:
-      - Traefik Forward Auth: docker-compose/traefik-forward-auth.md
+  - 🐳 Docker: 
+    - Подготовка:
+      - Установка: docker.md
+      - Безопасность: docker/security.md
+    - В начале:
+      - Traefik: docker/traefik.md
+      - Traefik Forward Auth: docker/traefik-forward-auth.md
+    - Сервисы: 
+      - Linx Server: docker/linx-server.md
+      - Samba: docker/samba.md
+      - Redis: docker/redis.md
+      - MotionEye: docker/motioneye.md
+      - Media Server:
+        - Plex: docker/plex.md
+        - Plex Meta Manager: docker/plex-mm.md
+        - Plex Trakt Sync: docker/plextraktsync.md
+      - Nextcloud:
+        - docker/nextcloud/index.md
+        - During Scan: docker/nextcloud/during-scan.md
+        - PHP imagick: docker/nextcloud/php-imagick.md
+      - Игровые сервера:
+        - Valheim: docker/games/valheim.md
   - Ubuntu 22:
+      - HPE:
+          - Management Component Pack: ubuntu/hpe/hpe-mcp.md
       - MariaDB: ubuntu/mariadb.md
-  - Помойка:
+      - Telegraf: ubuntu/telegraf.md
+      - Docker+UFW: ubuntu/docker-ufw.md
+      - Монтирование CIFS: ubuntu/mount-cifs.md
+  - Proxmox:
+      - CT Template: proxmox/ct-template.md
+  - Другое:
     - SSL для сайта: other/ssl-for-site.md
     - Ubuntu bash aliases: other/ubuntu-bash-aliases.md
+    - ТСД:
+      - Прошивка MC9090 на CE7.0: 
+        - other/tsd/index.md
+        - Переустановка ОС: other/tsd/reinstall-ce7.md
+        - Настройка ТСД: other/tsd/config-ce7.md
+        - Настройка Wi-Fi: other/tsd/config-wifi.md
+        - Настройка TelnetCE: other/tsd/config-telnetce.md
+        - Установка TelnetCE: other/tsd/install-telnetce.md
+    - Synology:
+      - HPE Microserver Gen10: other/synology/install-hpe-ms-gen10.md
+    - Office:
+      - Excel:
+        - other/office/excel/index.md
+        - VBA Защита страницы: other/office/excel/vba-security-page.md
+        - VBA Исправление примечаний: other/office/excel/vba-align-comments.md
+        - VBA Создание файла: other/office/excel/vba-create-file.md
+        - VBA Открытие файла: other/office/excel/vba-open-file.md
+        - VBA Отправка почты: other/office/excel/vba-send-email.md
+        - VBA Прогресс бар: other/office/excel/vba-progress-bar.md
+        - VBA Удаление пароля: other/office/excel/vba-remove-pass.md
+    - Телефоны:
+      - Grandstream:
+        - Provisioning через TFTP: other/phone/grandstream/provisioning.md
+        - Пример конфигурации: other/phone/grandstream/example-config.md
+      - Ipecs-MG:
+        - Общие настройки: other/phone/ipecs-mg/general.md
+        - Книги: other/phone/ipecs-mg/books.md
+        - Голосовые приветствия: other/phone/ipecs-mg/voice.md
+  - Сеть:
+    - Mikrotik:
+      - Wireguard: network/mikrotik/wireguard.md
+    - Ubiquiti:
+      - Добавление новой точки: network/ubi/add-new-ap.md
+      - Ошибка обновления: network/ubi/failed-update.md
+  - Блог:
+    - Начальная: blog/index.md
+    - Traefik FA: blog/posts/traefik-fa.md
+
 
 theme:
   name: material
   #custom_dir: overrides
   language: ru
-  #logo: images/site/logo.png
-  favicon: images/assets/favicon.png
+  logo: images/st1t_white.png
+  favicon: images/st1t_blue.png
   icon:
     repo: simple/gitea
-    logo: fontawesome/regular/folder-open
+    #logo: images/st1t_white.png
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -61,8 +118,8 @@ theme:
     code: Jet Brains Mono
 
   features:
-    - navigation.instant
-    #- navigation.sections # prevents collapsible sections
+    #- navigation.instant
+    - navigation.sections # prevents collapsible sections
     - navigation.indexes # section index pages
     - navigation.expand #expands sections by default
     - navigation.tabs
@@ -81,10 +138,22 @@ theme:
   #   - search.suggest
 
 plugins:
-  search:
-    lang: 
-      - ru
-      - en
+  - search:
+      lang: 
+        - ru
+        - en
+  - glightbox
+  - blogging:
+      dirs: # The directories to be included
+        - blog
+  - git-revision-date-localized:
+      type: custom
+      custom_format: "%d.%m.%Y"
+      fallback_to_build_date: true
+      enable_creation_date: true
+      locale: ru
+      exclude:
+        - index.md  
 
 markdown_extensions:
   - abbr
@@ -94,11 +163,12 @@ markdown_extensions:
   - footnotes
   - meta # adds support for front matter
   - toc:
-      permalink: true
-      toc_depth: 4
+      permalink: false
+      toc_depth: 3
   - pymdownx.highlight: # code highlighting
       linenums: true
-  - pymdownx.tabbed # enables tabs for embedded blocks
+  - pymdownx.tabbed: # enables tabs for embedded blocks
+      alternate_style: true 
   - pymdownx.snippets
   - pymdownx.superfences # allows for the nesting of code blocks inside other blocks
   - pymdownx.keys
@@ -109,3 +179,6 @@ extra:
   status:
     new: Recently added
     deprecated: Deprecated
+  social:
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/xtsgTBf
