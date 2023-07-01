@@ -140,7 +140,7 @@ plugins:
         - blog
   - git-revision-date-localized:
       type: custom
-      custom_format: "%d. %B %Y"
+      custom_format: "%d.%m.%Y"
       fallback_to_build_date: true
       enable_creation_date: true
       locale: ru
