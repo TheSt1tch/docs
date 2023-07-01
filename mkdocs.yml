@@ -26,6 +26,8 @@ nav:
         - docker/nextcloud/index.md
         - During Scan: docker/nextcloud/during-scan.md
         - PHP imagick: docker/nextcloud/php-imagick.md
+      - Игровые сервера:
+        - Valheim: docker/games/valheim.md
   - Ubuntu 22:
       - HPE:
           - Management Component Pack: ubuntu/hpe/hpe-mcp.md
