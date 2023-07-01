@@ -8,5 +8,5 @@
 
 Надеюсь, что статьи будут полезны.
 
-Для связи: https://t.me/thest1tch
+Для связи: [TG](https://t.me/thest1tch)
 
