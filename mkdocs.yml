@@ -18,8 +18,8 @@ nav:
       - Samba: docker/samba.md
       - Redis: docker/redis.md
       - MotionEye: docker/motioneye.md
-      - Media Server:
-        - Plex: docker/plex.md
+      - Plex: 
+        - docker/plex.md
         - Plex Meta Manager: docker/plex-mm.md
         - Plex Trakt Sync: docker/plextraktsync.md
       - Nextcloud:
@@ -121,7 +121,6 @@ theme:
     code: Jet Brains Mono
 
   features:
-    #- navigation.instant
     - navigation.sections # prevents collapsible sections
     - navigation.indexes # section index pages
     #- navigation.expand #expands sections by default
@@ -137,8 +136,6 @@ theme:
     - header.autohide
     - announce.dismiss
     - toc.follow
-  # insiders only
-  #   - search.suggest
 
 plugins:
   - search:
