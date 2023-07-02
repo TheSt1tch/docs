@@ -35,11 +35,11 @@ nav:
       - Telegraf: ubuntu/telegraf.md
       - Docker+UFW: ubuntu/docker-ufw.md
       - Монтирование CIFS: ubuntu/mount-cifs.md
+      - Ubuntu bash aliases: other/ubuntu-bash-aliases.md
   - Proxmox:
       - CT Template: proxmox/ct-template.md
   - Другое:
     - SSL для сайта: other/ssl-for-site.md
-    - Ubuntu bash aliases: other/ubuntu-bash-aliases.md
     - ТСД:
       - other/tsd/index.md
       - Переустановка ОС:
