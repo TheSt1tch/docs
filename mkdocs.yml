@@ -42,6 +42,7 @@ nav:
       - Active Directiry: software/powershell/ad.md
       - Stop-Process: software/powershell/stop-process.md
       - Count-Pages: software/powershell/count-pages.md
+      - Send-Mail: software/powershell/send-mail.md
   - Proxmox:
       - CT Template: proxmox/ct-template.md
   - Другое:
