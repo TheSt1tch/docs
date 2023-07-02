@@ -28,7 +28,8 @@ nav:
         - PHP imagick: docker/nextcloud/php-imagick.md
       - Игровые сервера:
         - Valheim: docker/games/valheim.md
-  - Ubuntu 22:
+  - Software:
+    - Ubuntu 22:
       - HPE:
           - Management Component Pack: ubuntu/hpe/hpe-mcp.md
       - MariaDB: ubuntu/mariadb.md
@@ -36,6 +37,11 @@ nav:
       - Docker+UFW: ubuntu/docker-ufw.md
       - Монтирование CIFS: ubuntu/mount-cifs.md
       - Ubuntu bash aliases: ubuntu/bash-aliases.md
+    - Powershell:
+      - software/powershell/index.md
+      - Active Directiry: software/powershell/ad.md
+      - Stop-Process: software/powershell/stop-process.md
+      - Count-Pages: software/powershell/count-pages.md
   - Proxmox:
       - CT Template: proxmox/ct-template.md
   - Другое:
