@@ -45,10 +45,11 @@ nav:
       - Ubuntu bash aliases: software/ubuntu/bash-aliases.md
       - Установка xRDP: software/ubuntu/xrdp.md
       - Использование Proxy: software/ubuntu/proxy-system.md
-      - Watchdog: software/ubuntu/watchdog.md.md
+      - Watchdog: software/ubuntu/watchdog.md
       - Backup:
         - Google Диск: software/ubuntu/backup/google.md
         - Yandex: software/ubuntu/backup/yandex.md
+        - Базы данных: software/ubuntu/backup/db.md
       - WebDAV:
         - Google Диск: software/ubuntu/webdav/google.md
         - Yandex: software/ubuntu/webdav/yandex.md
@@ -58,6 +59,27 @@ nav:
       - Stop-Process: software/powershell/stop-process.md
       - Count-Pages: software/powershell/count-pages.md
       - Send-Mail: software/powershell/send-mail.md
+    - Home Assistant:
+      - Будильник: software/hass/alarm-check.md
+      - Пакеты конфигураций: software/hass/package-conf.md
+    - Windows:
+      - Servers:
+        - Удаление RUS US: software/win/serv/rusus.md
+        - CleanMGR: software/win/serv/cleanmgr.md
+        - SPP + Hyper-V: software/win/serv/spp-hyperv.md
+        - VHD: software/win/serv/vhd.md
+        - WIM в ESD: software/win/serv/wim-esd.md
+      - Desktop:
+        - Send To: software/win/desk/sendto.md
+        - Удаление hiberfil.sys: software/win/desk/del-hiberfil.md
+        - Удаление папок в МойКомп: software/win/desk/del-mycomp.md
+        - Удаление папки WindowsApps: software/win/desk/del-winapps.md
+        - Получить код OEM: software/win/desk/get-key-oem.md
+        - Не работает клавиша PrnScr: software/win/desk/prnscr.md
+        - TWINUI в свойствах файла: software/win/desk/twinui.md
+        - KMS: software/win/desk/kms.md
+        - Установка DialUX: software/win/desk/dialux.md
+
   - Proxmox:
       - CT Template: proxmox/ct-template.md
   - Другое:
