@@ -28,6 +28,7 @@ nav:
         - PHP imagick: docker/nextcloud/php-imagick.md
       - Игровые сервера:
         - Valheim: docker/games/valheim.md
+      - WikiJS: docker/wikijs.md
   - Software:
     - Ubuntu 22:
       - software/ubuntu/index.md
