@@ -79,7 +79,6 @@ nav:
         - TWINUI в свойствах файла: software/win/desk/twinui.md
         - KMS: software/win/desk/kms.md
         - Установка DialUX: software/win/desk/dialux.md
-
   - Proxmox:
       - CT Template: proxmox/ct-template.md
   - Другое:
@@ -116,8 +115,17 @@ nav:
         - Книги: other/phone/ipecs-mg/books.md
         - Голосовые приветствия: other/phone/ipecs-mg/voice.md
   - Сеть:
+    - Утилиты:
+      - Wtraf: network/tools/wtraf.md
+      - Nmap: network/tools/nmap.md
     - Mikrotik:
       - Wireguard: network/mikrotik/wireguard.md
+      - 4G Модем: network/mikrotik/4g.md
+      - Cloud Hosted Router: network/mikrotik/chr.md
+      - DHCP: network/mikrotik/dhcp.md
+      - Split-DNS: network/mikrotik/split-dns.md
+      - Hairpin NAT: network/mikrotik/hairpin-nat.md
+      - UPnP: network/mikrotik/upnp.md
     - Ubiquiti:
       - Добавление новой точки: network/ubi/add-new-ap.md
       - Ошибка обновления: network/ubi/failed-update.md
