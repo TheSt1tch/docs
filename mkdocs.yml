@@ -31,12 +31,12 @@ nav:
   - Software:
     - Ubuntu 22:
       - HPE:
-          - Management Component Pack: ubuntu/hpe/hpe-mcp.md
-      - MariaDB: ubuntu/mariadb.md
-      - Telegraf: ubuntu/telegraf.md
-      - Docker+UFW: ubuntu/docker-ufw.md
-      - Монтирование CIFS: ubuntu/mount-cifs.md
-      - Ubuntu bash aliases: ubuntu/bash-aliases.md
+          - Management Component Pack: software/ubuntu/hpe/hpe-mcp.md
+      - MariaDB: software/ubuntu/mariadb.md
+      - Telegraf: software/ubuntu/telegraf.md
+      - Docker+UFW: software/ubuntu/docker-ufw.md
+      - Монтирование CIFS: software/ubuntu/mount-cifs.md
+      - Ubuntu bash aliases: software/ubuntu/bash-aliases.md
     - Powershell:
       - software/powershell/index.md
       - Active Directiry: software/powershell/ad.md
