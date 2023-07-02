@@ -67,3 +67,4 @@ version: "3.7"
 ## Автор
 
 Andrei Marcu, [https://andreim.net/](https://andreim.net/)
+
