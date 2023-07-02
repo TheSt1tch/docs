@@ -30,6 +30,12 @@ nav:
         - Valheim: docker/games/valheim.md
   - Software:
     - Ubuntu 22:
+      - software/ubuntu/index.md
+      - Команды: software/ubuntu/commands.md
+      - Ошибки консоли: software/ubuntu/errors.md
+      - Добавление диска: software/ubuntu/add-disk.md
+      - Добавление S3: software/ubuntu/add-s3.md
+      - LVM: software/ubuntu/lvm.md
       - HPE:
           - Management Component Pack: software/ubuntu/hpe/hpe-mcp.md
       - MariaDB: software/ubuntu/mariadb.md
@@ -37,6 +43,15 @@ nav:
       - Docker+UFW: software/ubuntu/docker-ufw.md
       - Монтирование CIFS: software/ubuntu/mount-cifs.md
       - Ubuntu bash aliases: software/ubuntu/bash-aliases.md
+      - Установка xRDP: software/ubuntu/xrdp.md
+      - Использование Proxy: software/ubuntu/proxy-system.md
+      - Watchdog: software/ubuntu/watchdog.md.md
+      - Backup:
+        - Google Диск: software/ubuntu/backup/google.md
+        - Yandex: software/ubuntu/backup/yandex.md
+      - WebDAV:
+        - Google Диск: software/ubuntu/webdav/google.md
+        - Yandex: software/ubuntu/webdav/yandex.md
     - Powershell:
       - software/powershell/index.md
       - Active Directiry: software/powershell/ad.md
