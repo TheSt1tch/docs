@@ -36,8 +36,6 @@ nav:
     - Добавление диска: ubuntu/add-disk.md
     - Добавление S3: ubuntu/add-s3.md
     - LVM: ubuntu/lvm.md
-    - HPE:
-      - Management Component Pack: ubuntu/hpe/hpe-mcp.md
     - Docker+UFW: ubuntu/docker-ufw.md
     - Монтирование CIFS: ubuntu/mount-cifs.md
     - Ubuntu bash aliases: ubuntu/bash-aliases.md
@@ -55,6 +53,8 @@ nav:
       - MariaDB: ubuntu/mariadb.md
       - Telegraf: ubuntu/telegraf.md
       - Redis: ubuntu/redis.md
+      - HPE:
+        - Management Component Pack: ubuntu/hpe/hpe-mcp.md
   - Software:
     - Powershell:
       - software/powershell/index.md
