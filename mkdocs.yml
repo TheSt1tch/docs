@@ -26,6 +26,7 @@ nav:
         - docker/nextcloud/index.md
         - During Scan: docker/nextcloud/during-scan.md
         - PHP imagick: docker/nextcloud/php-imagick.md
+        - Cron: docker/nextcloud/cron.md
       - Игровые сервера:
         - Valheim: docker/games/valheim.md
       - WikiJS: docker/wikijs.md
