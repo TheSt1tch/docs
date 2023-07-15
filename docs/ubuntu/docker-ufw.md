@@ -1,6 +1,6 @@
 # Как использовать Docker с UFW одновременно
 
-![](../../images/ubuntu/docker-and-ufw.jpg)
+![](../images/ubuntu/docker-and-ufw.jpg)
 
 Удивительно, но Docker не работает из коробки с “Universal Firewall” Linux, или UFW.
 ## Почему Docker не работает с UFW?

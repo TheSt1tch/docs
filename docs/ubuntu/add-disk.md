@@ -8,7 +8,7 @@
 fdisk -l
 ```
 
-![](../../images/ubuntu/add-disk.png)
+![](../images/ubuntu/add-disk.png)
 
 ## Создаем GPT
 
