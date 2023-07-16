@@ -27,6 +27,8 @@ nav:
         - During Scan: docker/nextcloud/during-scan.md
         - PHP imagick: docker/nextcloud/php-imagick.md
         - Cron: docker/nextcloud/cron.md
+      - Gitea: docker/gitea.md
+      - Drone CI: docker/drone.md
       - Игровые сервера:
         - Valheim: docker/games/valheim.md
       - WikiJS: docker/wikijs.md
