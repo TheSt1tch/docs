@@ -15,15 +15,9 @@ services:
   server:
     image: gitea/gitea:latest
     container_name: gitea
-    environment:
-      - PUID=$PUID
-      - PGID=$PGID
-      - TZ=$TZ
-      - GITEA__database__DB_TYPE=postgres
-      - "GITEA__database__HOST=192.168.1.12:5432"
-      - GITEA__database__NAME=gitea
-      - GITEA__database__USER=gitea
-      - "GITEA__database__PASSWD=nyxGsayHUq%t5W4^Pj#ei%^xN*GUp75Kxz"
+    environment: 
+      - USER_UID=1000 
+      - USER_GID=1000
     restart: always
     volumes:
       - /etc/timezone:/etc/timezone:ro
@@ -72,18 +66,6 @@ services:
 
 </td>
 <td>Автоматический перезапуск контейнера, при остановке</td>
-</tr>
-<tr>
-<td>
-
-```yaml
-    environment: 
-      - USER_UID=1000 
-      - USER_GID=1000
-```
-
-</td>
-<td>ID пользователя и группы, использующиеся в контейнере</td>
 </tr>
 <tr>
 <td>
