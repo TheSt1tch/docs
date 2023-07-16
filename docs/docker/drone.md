@@ -1,8 +1,6 @@
 # Drone CI
 
-`docker-compose.yml
-
-```yaml
+```yaml title="docker-compose.yml"
 version: '3.7'
 
 services:
