@@ -58,6 +58,7 @@ nav:
       - Redis: ubuntu/redis.md
       - HPE:
         - Management Component Pack: ubuntu/hpe/hpe-mcp.md
+      - NCDU: ubuntu/ncdu.md
   - Software:
     - Powershell:
       - software/powershell/index.md
