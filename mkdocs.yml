@@ -32,6 +32,7 @@ nav:
       - Игровые сервера:
         - Valheim: docker/games/valheim.md
       - WikiJS: docker/wikijs.md
+      - HandBrake: docker/handbrake.md
   - Ubuntu Server:
     - ubuntu/index.md
     - Команды: ubuntu/commands.md
@@ -133,6 +134,7 @@ nav:
       - Split-DNS: network/mikrotik/split-dns.md
       - Hairpin NAT: network/mikrotik/hairpin-nat.md
       - UPnP: network/mikrotik/upnp.md
+      - BGP: network/mikrotik/bgp.md
     - Ubiquiti:
       - Добавление новой точки: network/ubi/add-new-ap.md
       - Ошибка обновления: network/ubi/failed-update.md
