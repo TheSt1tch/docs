@@ -1,4 +1,4 @@
-# BGP на RouteOS 7 
+# BGP на RouterOS 7 
 
 ```
 /routing bgp template
