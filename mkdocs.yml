@@ -11,7 +11,9 @@ nav:
       - Установка: docker.md
       - Безопасность: docker/security.md
     - В начале:
-      - Traefik: docker/traefik.md
+      - Traefik: 
+        - docker/traefik.md
+        - TCP Route: docker/traefik/tcp-routes.md
       - Traefik Forward Auth: docker/traefik-forward-auth.md
     - Сервисы: 
       - Linx Server: docker/linx-server.md
@@ -140,7 +142,6 @@ nav:
       - Ошибка обновления: network/ubi/failed-update.md
   - Блог:
     - Blog: blog/index.md
-
 
 theme:
   name: material
