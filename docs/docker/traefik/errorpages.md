@@ -35,7 +35,7 @@ labels:
 URL-адреса, такие как:
 
 ```
-http://what-the-heck-is-this.example.com
+http://bla-bla.example.com
 ```
 
 попадут в ваш Traefik, но ни один маршрутизатор не справится с ними. В таких случаях мы хотим, чтобы Traefik вернул нашу классную кастомную страницу ошибки.
@@ -107,7 +107,7 @@ http://what-the-heck-is-this.example.com
           traefik.http.services.error-pages-svc.loadbalancer.server.port: 80
 
       test-app:
-        image: containous:whoami
+        image: containous/whoami
         networks: 
           - traefik_net
         labels:
@@ -178,7 +178,7 @@ server {
 
 Если вы запросите: `http://traefik.localhost/` или `http://test.localhost/` вы получите панель управления Traefik и выходные данные whoami соответственно.
 
-Если вы попытаетесь получить: `http://this-does-not-exist.localhost`, Traefik вернет именно вашу дружественную страницу с ошибкой 404 (т. е. `404.html`).
+Если вы попытаетесь получить: `http://bla-bla.localhost`, Traefik вернет именно вашу дружественную страницу с ошибкой 404 (т. е. `404.html`).
 
 !!! tip
     Обратите внимание: если вы заинтересованы в **управлении ошибками таким же образом и для определенных служб, вы можете использовать промежуточное программное обеспечение ErrorPage**. 
@@ -192,7 +192,7 @@ server {
       # Attach the error middleware also to this router
       traefik.http.routers.traefik.middlewares: error-pages-middleware
     ```
-    Теперь, если вы запросите: `http://traefik.localhost/does/not/exist`, вы снова получите настроенную страницу ошибки 404.
+    Теперь, если вы запросите: `http://traefik.localhost/bla-bla`, вы снова получите настроенную страницу ошибки 404.
 
 ---
 
