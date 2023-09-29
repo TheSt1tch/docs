@@ -36,6 +36,7 @@ nav:
         - Valheim: docker/games/valheim.md
       - WikiJS: docker/wikijs.md
       - HandBrake: docker/handbrake.md
+      - Pictshare: docker/pictshare.md
   - Ubuntu Server:
     - ubuntu/index.md
     - Команды: ubuntu/commands.md
