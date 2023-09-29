@@ -25,6 +25,7 @@ nav:
         - docker/plex.md
         - Plex Meta Manager: docker/plex-mm.md
         - Plex Trakt Sync: docker/plextraktsync.md
+      - Homarr: docker/homarr.md
       - Nextcloud:
         - docker/nextcloud/index.md
         - During Scan: docker/nextcloud/during-scan.md
