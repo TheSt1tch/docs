@@ -1,9 +1,3 @@
-<p align="center">
-  <a href="" rel="noopener">
-    <img height=200px src="https://github.com/HaschekSolutions/pictshare/raw/master/css/imgs/logo/logo.svg" alt="PictShare logo">
-  </a>
-</p>
-
 # Pictshare - свой хостинг для картинок, гифок, видяшек и документов. 
 
 [![](https://img.shields.io/docker/pulls/hascheksolutions/pictshare?color=brightgreen)](https://hub.docker.com/r/hascheksolutions/pictshare)
