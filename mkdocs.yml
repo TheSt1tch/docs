@@ -96,6 +96,7 @@ nav:
       - CT Template: proxmox/ct-template.md
   - Другое:
     - SSL для сайта: other/ssl-for-site.md
+    - Self Hosted: other/self-hosted.md
     - ТСД:
       - other/tsd/index.md
       - Переустановка ОС:
