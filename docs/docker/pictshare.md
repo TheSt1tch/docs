@@ -31,7 +31,3 @@ docker run -d -p 8080:80 --name=pictshare ghcr.io/hascheksolutions/pictshare
 - Дубликаты не занимают места. Если один и тот же файл загружается дважды, вторая загрузка будет связана с первой.
 - [Много возможностей для настройки](https://github.com/HaschekSolutions/pictshare/blob/master/rtfm/CONFIG.md)
 - Полный контроль над вашими данными. Удаление изображений с индивидуальными и глобальными кодами удаления
-
-
-
-[Github](https://github.com/HaschekSolutions/pictshare){ .md-button .md-button--primary }

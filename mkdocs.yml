@@ -17,7 +17,6 @@ nav:
         - Error Pages: docker/traefik/errorpages.md
       - Traefik Forward Auth: docker/traefik-forward-auth.md
     - Сервисы: 
-      - Linx Server: docker/linx-server.md
       - Samba: docker/samba.md
       - Redis: docker/redis.md
       - MotionEye: docker/motioneye.md
@@ -38,6 +37,8 @@ nav:
       - WikiJS: docker/wikijs.md
       - HandBrake: docker/handbrake.md
       - Pictshare: docker/pictshare.md
+      - Устарело:
+        - Linx Server: docker/linx-server.md
   - Ubuntu Server:
     - ubuntu/index.md
     - Команды: ubuntu/commands.md
