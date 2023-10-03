@@ -1,27 +1,26 @@
 # Ctop - интерфейс для метрик контейнеров
 
-![](https://github.com/bcicen/ctop/raw/master/_docs/img/logo.png){ width="300" }
+![](https://github.com/bcicen/ctop/raw/master/_docs/img/logo.png){ align=center width="300" }
 
 #
 
 ![release][release] ![homebrew][homebrew] ![macports][macports] ![scoop][scoop]
 
-Top-like interface for container metrics
+Удобный интерфейс для метрик контейнеров
 
-`ctop` provides a concise and condensed overview of real-time metrics for multiple containers:
-<p align="center"><img src="_docs/img/grid.gif" alt="ctop"/></p>
+`ctop` предоставляет краткий и сжатый обзор метрик в реальном времени для нескольких контейнеров:
 
-as well as a [single container view][single_view] for inspecting a specific container.
+![](https://github.com/bcicen/ctop/raw/master/_docs/img/grid.gif){ width="300" }
 
-`ctop` comes with built-in support for Docker and runC; connectors for other container and cluster systems are planned for future releases.
+`ctop` поставляется со встроенной поддержкой Docker и runC
 
-## Install
+## Установка
 
-Fetch the [latest release](https://github.com/bcicen/ctop/releases) for your platform:
+Загрузите [последний релиз](https://github.com/bcicen/ctop/releases) для вашей платформы:
 
 #### Debian/Ubuntu
 
-Maintained by a [third party](https://packages.azlux.fr/)
+Поддерживается [сторонним разработчиком](https://packages.azlux.fr/)
 ```bash
 sudo apt-get install ca-certificates curl gnupg lsb-release
 curl -fsSL https://azlux.fr/repo.gpg.key | sudo gpg --dearmor -o /usr/share/keyrings/azlux-archive-keyring.gpg
@@ -80,21 +79,7 @@ docker run --rm -ti \
   quay.io/vektorlab/ctop:latest
 ```
 
-## Building
-
-Build steps can be found [here][build].
-
-## Usage
-
-`ctop` requires no arguments and uses Docker host variables by default. See [connectors][connectors] for further configuration options.
-
-### Config file
-
-While running, use `S` to save the current filters, sort field, and other options to a default config path (`~/.config/ctop/config` on XDG systems, else `~/.ctop`).
-
-Config file values will be loaded and applied the next time `ctop` is started.
-
-### Options
+### Опции запуска
 
 Option | Description
 --- | ---
@@ -106,24 +91,6 @@ Option | Description
 `-s`  | select initial container sort field
 `-v`	| output version information and exit
 
-### Keybindings
-
-|           Key            | Action                                                     |
-| :----------------------: | ---------------------------------------------------------- |
-| <kbd>&lt;ENTER&gt;</kbd> | Open container menu                                        |
-|       <kbd>a</kbd>       | Toggle display of all (running and non-running) containers |
-|       <kbd>f</kbd>       | Filter displayed containers (`esc` to clear when open)     |
-|       <kbd>H</kbd>       | Toggle ctop header                                         |
-|       <kbd>h</kbd>       | Open help dialog                                           |
-|       <kbd>s</kbd>       | Select container sort field                                |
-|       <kbd>r</kbd>       | Reverse container sort order                               |
-|       <kbd>o</kbd>       | Open single view                                           |
-|       <kbd>l</kbd>       | View container logs (`t` to toggle timestamp when open)    |
-|       <kbd>e</kbd>       | Exec Shell                                                 |
-|       <kbd>c</kbd>       | Configure columns                                          |
-|       <kbd>S</kbd>       | Save current configuration to file                         |
-|       <kbd>q</kbd>       | Quit ctop                                                  |
-
 [build]: _docs/build.md
 [connectors]: _docs/connectors.md
 [single_view]: _docs/single.md
@@ -132,6 +99,6 @@ Option | Description
 [macports]: https://repology.org/badge/version-for-repo/macports/ctop.svg?header=macports "ctop"
 [scoop]: https://img.shields.io/scoop/v/ctop?bucket=main "ctop"
 
-## Alternatives
+## Альтернативы
 
-See [Awesome Docker list](https://github.com/veggiemonk/awesome-docker/blob/master/README.md#terminal) for similar tools to work with Docker. 
+См.  [Awesome Docker список](https://github.com/veggiemonk/awesome-docker/blob/master/README.md#terminal) для получения информации об аналогичных инструментах для работы с Docker.
