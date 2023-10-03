@@ -16,6 +16,9 @@ nav:
         - TCP Route: docker/traefik/tcp-routes.md
         - Error Pages: docker/traefik/errorpages.md
       - Traefik Forward Auth: docker/traefik-forward-auth.md
+      - Docker Compose:
+        - Profile: docker/compose/profile.md
+        - Healthcheck: docker/compose/healthcheck.md
     - Сервисы: 
       - Samba: docker/samba.md
       - Redis: docker/redis.md
