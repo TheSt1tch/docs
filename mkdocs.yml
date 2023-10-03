@@ -67,6 +67,7 @@ nav:
       - HPE:
         - Management Component Pack: ubuntu/hpe/hpe-mcp.md
       - NCDU: ubuntu/ncdu.md
+      - ctop: ubuntu/ctop.md
   - Software:
     - Powershell:
       - software/powershell/index.md
