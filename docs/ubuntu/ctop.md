@@ -3,8 +3,8 @@
 ![](https://github.com/bcicen/ctop/raw/master/_docs/img/logo.png){ align=center width="300" }
 
 #
-
-![release][release] ![homebrew][homebrew] ![macports][macports] ![scoop][scoop]
+[![](https://img.shields.io/github/release/bcicen/ctop.svg)](https://github.com/bcicen/ctop/releases)
+![homebrew][homebrew] ![macports][macports] ![scoop][scoop]
 
 Удобный интерфейс для метрик контейнеров
 
