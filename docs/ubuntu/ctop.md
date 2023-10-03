@@ -1,4 +1,4 @@
-# Ctop - интерфейс для метрик контейнеров
+# Ctop - это `top` или `htop` для контейнеров
 
 ![](https://github.com/bcicen/ctop/raw/master/_docs/img/logo.png){ align=center width="300" }
 
@@ -10,7 +10,7 @@
 
 `ctop` предоставляет краткий и сжатый обзор метрик в реальном времени для нескольких контейнеров:
 
-![](https://github.com/bcicen/ctop/raw/master/_docs/img/grid.gif){ width="300" }
+![](https://github.com/bcicen/ctop/raw/master/_docs/img/grid.gif)
 
 `ctop` поставляется со встроенной поддержкой Docker и runC
 
