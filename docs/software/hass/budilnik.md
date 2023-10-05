@@ -6,13 +6,8 @@
 
 ## Внешний вид карточки
 
-![](https://api.sprut.ai/static/media/cache/00/83/47/40/4289/77973/1600x_image.png?1620313596)
-
-Карточка будильника
-
-![](https://api.sprut.ai/static/media/cache/00/83/47/40/4289/77974/1600x_image.png?1620313597)
-
-Карточка будильника развернута
+![](../../images/software/hass/card-budilnik.png)
+![](../../images/software/hass/card-budilnik-2.png)
 
 ## Код карточки
 
@@ -461,3 +456,9 @@ script:
         media_content_id: Будильник выключен.
         media_content_type: text
 ```
+
+Взято с [Sprut.ai](https://sprut.ai/article/priruchi-home-assistant-budilnik) и приведено в читаемый вид. Спасибо автору за код, но юзать его с оригинала почти невозможно.
+
+Надо еще доделать:
+- `yandex_tts_4` - отвечает за голос от Алисы, когда запускается будильник после рестарта HASS
+- Добавить настройку зависимости штор и света от заката/вохода солнца

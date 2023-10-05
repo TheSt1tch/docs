@@ -79,7 +79,7 @@ nav:
       - Count-Pages: software/powershell/count-pages.md
       - Send-Mail: software/powershell/send-mail.md
     - Home Assistant:
-      - Будильник: software/hass/alarm-check.md
+      - Будильник: software/hass/budilnik.md
       - Пакеты конфигураций: software/hass/package-conf.md
     - Chrome:
       - Download bar: software/chrome/download-bar.md
