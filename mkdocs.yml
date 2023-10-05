@@ -81,6 +81,8 @@ nav:
     - Home Assistant:
       - Будильник: software/hass/alarm-check.md
       - Пакеты конфигураций: software/hass/package-conf.md
+    - Chrome:
+      - Download bar: software/chrome/download-bar.md
     - Windows:
       - Servers:
         - Удаление RUS US: software/win/serv/rusus.md
