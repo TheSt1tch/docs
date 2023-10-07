@@ -5,7 +5,7 @@ name: build-home-docs
 
 steps:
 - name: build main
-  image: squidfunk/mkdocs-material:9.1.17
+  image: squidfunk/mkdocs-material:9.4.4
   pull: if-not-exists
   volumes:
   - name: site

@@ -82,7 +82,7 @@ nav:
       - Zigbee2mqtt: software/hass/zigbee2mqtt.md
       - Пакеты конфигураций: 
         - software/hass/package/index.md
-        - Будильник: software/hass/budilnik.md
+        - Будильник: software/hass/package/budilnik.md
     - Chrome:
       - Download bar: software/chrome/download-bar.md
     - Windows:
