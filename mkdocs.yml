@@ -79,8 +79,10 @@ nav:
       - Count-Pages: software/powershell/count-pages.md
       - Send-Mail: software/powershell/send-mail.md
     - Home Assistant:
-      - Будильник: software/hass/budilnik.md
-      - Пакеты конфигураций: software/hass/package-conf.md
+      - Zigbee2mqtt: software/hass/zigbee2mqtt.md
+      - Пакеты конфигураций: 
+        - software/hass/package-conf.md
+        - Будильник: software/hass/budilnik.md
     - Chrome:
       - Download bar: software/chrome/download-bar.md
     - Windows:
