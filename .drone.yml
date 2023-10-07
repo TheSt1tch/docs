@@ -23,7 +23,7 @@ steps:
       - main
 
 - name: build states
-  image: git.st1t.ru/thest1tch/mkdocs-material:latest
+  image: git.st1t.ru/thest1tch/mkdocs-material:v9.4.4
   pull: if-not-exists
   volumes:
   - name: site
