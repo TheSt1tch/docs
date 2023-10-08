@@ -132,7 +132,7 @@
             - input_boolean.alarm_weekend 
           to: 'on' 
         action: 
-          - service: yandex_tts_alarm_on
+          - service: script.yandex_tts_alarm_on
 
       # ВЫКЛЮЧЕНИЕ КЛАВИШАМИ. ПРОСТО ЗВУКОВОЕ СООБЩЕНИЕ О ВЫКЛЮЧЕНИИ 
       - id: 'off_alarm_clock' 
@@ -144,7 +144,7 @@
             - input_boolean.alarm_1_weekend 
           to: 'off' 
         action: 
-          - service: yandex_tts_alarm_off
+          - service: script.yandex_tts_alarm_off
 
       # Запуск будильника по будням
       - id: 'alarm_weekday' 
@@ -225,35 +225,31 @@
           - condition: state
             entity_id: sun.sun
             state: above_horizon
-            for:
-              hours: 0
-              minutes: 1
-              seconds: 0
-          - service: cover.open_cover
+          - service: cover.set_cover_position
             data: 
               position: 10
             target:
               entity_id: cover.yeelink_ctmt1_c8c9_curtain
           - delay: 00:02:00
-          - service: cover.open_cover
+          - service: cover.set_cover_position
             data: 
               position: 30
             target:
               entity_id: cover.yeelink_ctmt1_c8c9_curtain
           - delay: 00:02:00
-          - service: cover.open_cover
+          - service: cover.set_cover_position
             data: 
               position: 50
             target:
               entity_id: cover.yeelink_ctmt1_c8c9_curtain
           - delay: 00:02:00
-          - service: cover.open_cover
+          - service: cover.set_cover_position
             data: 
               position: 70
             target:
               entity_id: cover.yeelink_ctmt1_c8c9_curtain
           - delay: 00:02:00
-          - service: cover.open_cover
+          - service: cover.set_cover_position
             data: 
               position: 100
             target:
@@ -263,16 +259,17 @@
       wakeup_sequence: 
         alias: wakeup_sequence 
         sequence: 
-          - data: {}
-          #сбрасываем параметры освещения 
-            service: wakeup_celib_start
-          - delay: 00:00:02 
-          #включаем плавное наращивание освещения 
-          - service: script.wakeup_celib_start
-          - service: script.wakeup_cover_start
-          - data: {}
-          #Включение музыки на яндекс станции 
-            service: yandex_tts_alarm_start
+          - service: script.turn_on
+            target:
+              entity_id: script.wakeup_celib_start
+          - delay: 00:00:05
+          - service: script.turn_on
+            target:
+              entity_id: script.wakeup_cover_start
+          - delay: 00:00:05
+          - service: script.turn_on
+            target:
+              entity_id: script.yandex_tts_alarm_start
 
       # TTS YANDEX
       yandex_tts_alarm_start:
