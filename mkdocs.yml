@@ -103,6 +103,8 @@ nav:
         - KMS: software/win/desk/kms.md
         - Установка DialUX: software/win/desk/dialux.md
   - Proxmox:
+    - Proxmox VE:
+      - index.md
       - CT Template: proxmox/ct-template.md
   - Другое:
     - SSL для сайта: other/ssl-for-site.md
