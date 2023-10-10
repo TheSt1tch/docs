@@ -1,7 +1,6 @@
 # Plex Meta Managers
 
-
-``` yaml title="docker-compose.yml
+```yaml title="docker-compose.yml
 version: "3.7"
 services:
   plexmm:
