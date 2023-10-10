@@ -29,7 +29,7 @@ services:
 
     === "Фильмы"
 
-        ```yaml
+        ``` yaml
         ## This file is a template remove the .template to use the file
         libraries:
           Фильмы:
@@ -132,7 +132,7 @@ services:
             created_at:
         ```
 
-  === "Сериалы"
+    === "Сериалы"
 
         ```yaml
           Сериалы:
