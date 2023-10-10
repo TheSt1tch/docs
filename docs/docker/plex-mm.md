@@ -29,7 +29,7 @@ services:
 
     === "Фильмы"
 
-        ``` yaml
+        ```yaml
         ## This file is a template remove the .template to use the file
         libraries:
           Фильмы:
@@ -135,6 +135,7 @@ services:
     === "Сериалы"
 
         ```yaml
+        libraries:
           Сериалы:
             metadata_path:
             - file: config/TV-Shows/Collections.yml
