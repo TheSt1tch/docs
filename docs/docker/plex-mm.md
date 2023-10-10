@@ -177,3 +177,27 @@ services:
             vertical_align: top
             vertical_offset: 0
     ```
+
+## Улучшения
+
+### Статус сериала (TMDB)
+
+В конфиге добавить этот текст для библиотеки, в которой нужно отображение:
+
+```yaml
+    - pmm: status
+      template_variables:
+        text_canceled: Отменен
+        text_airing: Идет сезон
+        text_returning: Продолжится
+        text_ended: Завершен
+        font_size: 75
+        #back_color: "#262626" # darker
+        back_width: 1920
+        back_height: 125
+        horizontal_align: center
+        vertical_align: top
+        vertical_offset: 0
+```
+
+[Документация](https://metamanager.wiki/en/latest/defaults/overlays/mediastinger.html)
