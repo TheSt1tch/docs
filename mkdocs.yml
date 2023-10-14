@@ -78,11 +78,6 @@ nav:
       - Stop-Process: software/powershell/stop-process.md
       - Count-Pages: software/powershell/count-pages.md
       - Send-Mail: software/powershell/send-mail.md
-    - Home Assistant:
-      - Zigbee2mqtt: software/hass/zigbee2mqtt.md
-      - Пакеты конфигураций: 
-        - software/hass/package/index.md
-        - Будильник: software/hass/package/budilnik.md
     - Chrome:
       - Download bar: software/chrome/download-bar.md
     - Windows:
@@ -106,6 +101,14 @@ nav:
     - Proxmox VE:
       - index.md
       - CT Template: proxmox/ct-template.md
+  - Home Assistant:
+    - Addons:
+      - Zigbee2mqtt: hass/zigbee2mqtt.md
+    - Package: 
+      - hass/package/index.md
+      - Будильник: hass/package/budilnik.md
+    - Device:
+      Xiaomi Airpurifier: hass/device/xiaomi-airpurifier.md
   - Другое:
     - SSL для сайта: other/ssl-for-site.md
     - Self Hosted: other/self-hosted.md
@@ -152,7 +155,7 @@ nav:
       - Split-DNS: network/mikrotik/split-dns.md
       - Hairpin NAT: network/mikrotik/hairpin-nat.md
       - UPnP: network/mikrotik/upnp.md
-      - BGP: network/mikrotik/bgp.md
+      - Обход блокировок: network/mikrotik/unblock-site.md
     - Ubiquiti:
       - Добавление новой точки: network/ubi/add-new-ap.md
       - Ошибка обновления: network/ubi/failed-update.md
