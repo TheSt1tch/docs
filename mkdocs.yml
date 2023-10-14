@@ -108,7 +108,7 @@ nav:
       - hass/package/index.md
       - Будильник: hass/package/budilnik.md
     - Device:
-      Xiaomi Airpurifier: hass/device/xiaomi-airpurifier.md
+      - Xiaomi Airpurifier: hass/device/xiaomi-airpurifier.md
   - Другое:
     - SSL для сайта: other/ssl-for-site.md
     - Self Hosted: other/self-hosted.md
