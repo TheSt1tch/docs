@@ -1,11 +1,9 @@
 ---
-draft: true 
+draft: false 
 date: 2023-10-17
 ---
 
 # Cоздание новой DNS-записи CNAME на Cloudflare
-
-----------
 
 Я рекомендую получить собственное доменное имя, указывающее на IP-адрес вашего дома в глобальной сети. Частное доменное имя через reg.ru будет стоить 850 рублей в год. Есть несколько причин, почему я рекомендую это:
 
@@ -13,7 +11,7 @@ date: 2023-10-17
 -   Afraid DNS не является одним из поддерживаемых поставщиков wildcard сертификатов. Хотя DuckDNS указан как поддерживаемый, он еще не тестировался.
 
 В моей настройке использую собственное доменное имя, все мои приложения в качестве отдельных хостов и Traefik 2.9 с сертификатами Wildcard. Мой провайдер DNS — Cloudflare, который  [протестирован и подтвержден](https://doc.traefik.io/traefik/v1.7/configuration/acme/#wildcard-domains)  для работы с подстановочными сертификатами Traefik Let’s Encrypt. Если у вас есть собственное доменное имя, а ваш провайдер DNS не указан в списке поддерживаемых, то я рекомендую перенести ваш DNS на Cloudflare, который удивительно быстр и бесплатен.
-
+<!-- more -->
 В Cloudflare вы должны указать свой корневой домен (example.com) на свой IP-адрес WAN. Затем добавьте CNAME с подстановочным знаком (*.example.com) или отдельные субдомены, указывающие на ваш корневой домен (@ для хоста), как показано ниже (для этого не требуется платная учетная запись).
 
 [![Cloudflare Dns Entries](https://www.smarthomebeginner.com/images/2018/05/cloudflare-dns-records-screenshot-740x495.png "Traefik Tutorial: Traefik Reverse Proxy with LetsEncrypt for Docker Media Server 3")](https://www.smarthomebeginner.com/images/2018/05/cloudflare-dns-records-screenshot.png)
