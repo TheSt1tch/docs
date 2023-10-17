@@ -1,6 +1,7 @@
 ---
 draft: false 
 date: 2023-10-17
+slug: 
 categories:
   - "ark: se"
   - games

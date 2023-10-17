@@ -1,6 +1,7 @@
 ---
 draft: false 
 date: 2023-10-17
+slug: cloudflare-cname
 ---
 
 # Cоздание новой DNS-записи CNAME на Cloudflare

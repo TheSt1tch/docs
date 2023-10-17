@@ -1,6 +1,6 @@
 ---
 draft: false 
-slug: traefik-fa
+date: 2023-10-17
 ---
 # Руководство по Traefik Forward Auth – Простая защита через Google SSO
 
