@@ -1,3 +1,7 @@
+---
+draft: true 
+date: 2023-10-17
+---
 # MySQL / MariaDB
 
 ## Настройки

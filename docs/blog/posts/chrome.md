@@ -1,4 +1,11 @@
-Google Chrome
+---
+draft: true 
+date: 2023-10-17
+tags:
+  - chrome
+---
+
+# Google Chrome
 
 ## Блокировка медиакнопок
 

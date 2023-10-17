@@ -1,3 +1,9 @@
+---
+draft: true 
+date: 2023-10-17
+---
+
+
 # Hikvision
 
 ## Hikvision: Путь до сохраненных файлов из веба

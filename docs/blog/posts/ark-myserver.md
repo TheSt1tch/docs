@@ -1,3 +1,12 @@
+---
+draft: true 
+date: 2023-10-17
+tags:
+  - "ark: se"
+  - games
+  - игры
+---
+
 [Локации на карте Fjordur](https://docs.google.com/spreadsheets/d/13Hov6IQNBorso8WqY0kkT72e4iISr192vkGbIMHVQWk/edit?usp=sharing)
 
 [Карта](https://ark.fandom.com/wiki/Mod:Fjordur/Explorer\Map)

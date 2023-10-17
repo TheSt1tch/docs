@@ -1,3 +1,8 @@
+---
+draft: true 
+date: 2023-10-17
+---
+
 `/c game.player.print(game.player.surface.peaceful_mode);`
 
 [Хранилище чертежей](https://www.factorio.school/)

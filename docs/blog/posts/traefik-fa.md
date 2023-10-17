@@ -1,3 +1,7 @@
+---
+draft: true 
+date: 2023-10-17
+---
 # Руководство по Traefik Forward Auth – Простая защита через Google SSO
 
 ![](https://st1t.ru/wp-content/uploads/2022/11/traefik-forward-auth-google-flow-840x525.png)

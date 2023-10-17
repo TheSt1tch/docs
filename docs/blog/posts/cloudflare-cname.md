@@ -1,3 +1,8 @@
+---
+draft: true 
+date: 2023-10-17
+---
+
 # Cоздание новой DNS-записи CNAME на Cloudflare
 
 ----------
