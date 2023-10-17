@@ -218,6 +218,7 @@ theme:
     - toc.follow
 
 plugins:
+  - meta
   - search:
       lang: 
         - ru
