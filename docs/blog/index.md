@@ -1,3 +1,1 @@
 # Блог
-
-{{ blog_content }}
