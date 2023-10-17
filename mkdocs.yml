@@ -223,9 +223,8 @@ plugins:
         - ru
         - en
   - glightbox
-  - blogging:
-      dirs: # The directories to be included
-        - blog
+  - blog:
+      post_url_format: "{date}/{slug}"
   - git-revision-date-localized:
       type: custom
       custom_format: "%d.%m.%Y"
