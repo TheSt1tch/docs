@@ -2,7 +2,7 @@
 
 Чтоб установить актуальную версию, нам нужно зайти в магазин дополнений и добавить туда новую ссылку: `https://github.com/zigbee2mqtt/hassio-zigbee2mqtt`
 
-![](../../images/software/hass/zigbee2mqtt-1.png)
+![](../images/hass/card-budilnik-1.png)
 
 После добавления этой ссылки в репозитории, необходимо перезапустить Home Assistant.
 
@@ -35,7 +35,7 @@ USB Stick Sonoff ZB Dongle-E – это новый координатор Zigbee
 6. Выбираем **Все оборудование**. 
 7. Находим через поиск наш стик - можно ввести в поиск sonoff, покажется адрес
 
-![](../../images/software/hass/zigbee2mqtt-2.png)
+![](../images/hass/zigbee2mqtt-2.png)
 
 Копируем строчу начиная от **DEVLINKS:**. Строчка должна выглядеть примерно так:
 
