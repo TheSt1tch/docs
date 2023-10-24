@@ -109,6 +109,9 @@ nav:
       - Будильник: hass/package/budilnik.md
     - Device:
       - Xiaomi Airpurifier: hass/device/xiaomi-airpurifier.md
+    - Автоматизации:
+      - Триггеры:
+        - Время: hass/automation/trigger/time.md
   - Другое:
     - SSL для сайта: other/ssl-for-site.md
     - Self Hosted: other/self-hosted.md
@@ -159,6 +162,9 @@ nav:
     - Ubiquiti:
       - Добавление новой точки: network/ubi/add-new-ap.md
       - Ошибка обновления: network/ubi/failed-update.md
+  - Игры:
+    - ARK Survival Evolved:
+      - Админские команды: games/ark/admin-commands.md
   - Блог:
     - Blog: blog/index.md
 
