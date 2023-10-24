@@ -1,21 +1,21 @@
 # ТСД - Терминалы Сбора Данных
 
-1.  [Решение проблем с ТСД Motorola](/docs/other/tsd/troubleshooting.md)
-2.  [Компонентный ремонт](/docs/other/tsd/repair.md)
+1.  [Решение проблем с ТСД Motorola](../../other/tsd/troubleshooting.md)
+2.  [Компонентный ремонт](../../other/tsd/repair.md)
 
 ## Motorola MC 9090
 
-1.  [Переустановка ОС CE 5.0](/docs/other/tsd/reinstall-os/ce5.md)
-2.  [Переустановка ОС WM 6.1](/docs/other/tsd/reinstall-os/m61.md)
+1.  [Переустановка ОС CE 5.0](../../other/tsd/reinstall-os/ce5.md)
+2.  [Переустановка ОС WM 6.1](../../other/tsd/reinstall-os/m61.md)
 
 
 ## Motorola MC 9200
 
- 1. [Переустановка ОС](/docs/other/tsd/reinstall-os/ce7.md)
- 2. [Настройка ТСД](/docsother/tsd/config-ce.md)
- 3. [Настройка Wi-Fi](/docs/other/tsd/config-wifi.md)
- 4. [Настройка TelnetCE](/docs/other/tsd/config-telnetce.md)
- 5. [Установка TelnetCE](/docs/other/tsd/install-telnetce.md)
+ 1. [Переустановка ОС](../../other/tsd/reinstall-os/ce7.md)
+ 2. [Настройка ТСД](../../other/tsd/config-ce.md)
+ 3. [Настройка Wi-Fi](../../other/tsd/config-wifi.md)
+ 4. [Настройка TelnetCE](../../other/tsd/config-telnetce.md)
+ 5. [Установка TelnetCE](../../other/tsd/install-telnetce.md)
 
 ## Софт
 
