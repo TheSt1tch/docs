@@ -99,7 +99,7 @@ nav:
         - Установка DialUX: software/win/desk/dialux.md
   - Proxmox:
     - Proxmox VE:
-      - index.md
+      - proxmox/index.md
       - CT Template: proxmox/ct-template.md
   - Home Assistant:
     - Addons:
