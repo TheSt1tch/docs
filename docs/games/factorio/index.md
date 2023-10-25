@@ -1,10 +1,14 @@
----
-draft: true 
-date: 2023-10-17
----
+# Factorio
 
-`/c game.player.print(game.player.surface.peaceful_mode);`
+## Мирный режим
 
+Ввод команды, отключит ачивки
+
+```
+/c game.player.print(game.player.surface.peaceful_mode);
+```
+
+## Различные ссылки
 [Хранилище чертежей](https://www.factorio.school/)
 
 [Моды для сервера](https://mods.factorio.com/)

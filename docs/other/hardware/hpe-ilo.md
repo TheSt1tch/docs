@@ -1,11 +1,6 @@
----
-draft: false 
-date: 2023-10-17
----
-# Последние версии прошивки HP ILO
+# Версии прошивки HPE iLo
 
 Здесь собраны  **последние версии прошивок ILO**  для модуля удаленного управления серверами HP (Integrated Lights-Out)
-<!-- more -->
 ***ОБНОВЛЕНО* 2023-05-28**
 
 ILO1 :  [ilo196.bin](https://downloads.hpe.com/pub/softlib2/software1/sc-linux-fw-ilo/p1980791503/v97349/CP023365.scexe)  (30-Apr-2014)  
@@ -215,5 +210,7 @@ ILO6 :  [ilo6_130.bin](https://downloads.hpe.com/pub/softlib2/software1/fwpkg-il
 ??? note "ILO6"
     [ilo6_110.bin](https://downloads.hpe.com/pub/softlib2/software1/fwpkg-ilo/p788720876/v201141/ilo6_110.fwpkg)  
     [ilo6_120.bin](https://downloads.hpe.com/pub/softlib2/software1/fwpkg-ilo/p788720876/v217630/ilo6_120.fwpkg)
+
+---
 
 [Источник](https://pingtool.org/ru/latest-hp-ilo-firmwares/){ .md-button .md-button--primary }

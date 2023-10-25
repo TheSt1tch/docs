@@ -1,7 +1,3 @@
----
-draft: true 
-date: 2023-10-17
----
 # Microsoft SQL Server
 
 ## Переименование сервера MS SQL

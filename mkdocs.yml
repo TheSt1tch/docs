@@ -87,6 +87,7 @@ nav:
         - SPP + Hyper-V: software/win/serv/spp-hyperv.md
         - VHD: software/win/serv/vhd.md
         - WIM в ESD: software/win/serv/wim-esd.md
+        - SQL Server: software/win/serv/mssql.md
       - Desktop:
         - Send To: software/win/desk/sendto.md
         - Удаление hiberfil.sys: software/win/desk/del-hiberfil.md
@@ -113,8 +114,13 @@ nav:
       - Триггеры:
         - Время: hass/automation/trigger/time.md
   - Другое:
+    - Закрыть фишинговый сайт: other/close-phishing-site.md
     - SSL для сайта: other/ssl-for-site.md
     - Self Hosted: other/self-hosted.md
+    - Hardware:
+      - HPE iLo: other/hardware/hpe-ilo.md
+      - Принтеры:
+        - Kyocera: other/hardware/printers/kyocera.md      
     - ТСД:
       - other/tsd/index.md
       - Переустановка ОС:
@@ -138,7 +144,7 @@ nav:
         - VBA Отправка почты: other/office/excel/vba-send-email.md
         - VBA Прогресс бар: other/office/excel/vba-progress-bar.md
         - VBA Удаление пароля: other/office/excel/vba-remove-pass.md
-    - Телефоны:
+    - IP Телефоны:
       - Grandstream:
         - Provisioning через TFTP: other/phone/grandstream/provisioning.md
         - Пример конфигурации: other/phone/grandstream/example-config.md
@@ -151,6 +157,7 @@ nav:
       - Wtraf: network/tools/wtraf.md
       - Nmap: network/tools/nmap.md
     - Mikrotik:
+      - network/mikrotik/index.md
       - Wireguard: network/mikrotik/wireguard.md
       - 4G Модем: network/mikrotik/4g.md
       - Cloud Hosted Router: network/mikrotik/chr.md
@@ -165,6 +172,8 @@ nav:
   - Игры:
     - ARK Survival Evolved:
       - Админские команды: games/ark/admin-commands.md
+    - Factorio:
+      - games/factorio/index.md
   - Блог:
     - Blog: blog/index.md
 

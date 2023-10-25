@@ -1,8 +1,10 @@
 ---
-draft: true 
+draft: false 
 date: 2023-10-17
+tags:
+  - hikvision
+  - hardware
 ---
-
 
 # Hikvision
 
