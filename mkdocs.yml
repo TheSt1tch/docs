@@ -1,5 +1,5 @@
 site_name: St1t.ru
-site_url: https://st1t.ru
+site_url: https://st1t.ru/
 repo_url: https://git.st1t.ru/thest1tch/docs
 repo_name: thest1tch/docs
 edit_uri: edit/main/docs/
@@ -11,43 +11,127 @@ nav:
       - Установка: docker.md
       - Безопасность: docker/security.md
     - В начале:
-      - Traefik: docker/traefik.md
+      - Traefik: 
+        - docker/traefik.md
+        - TCP Route: docker/traefik/tcp-routes.md
+        - Error Pages: docker/traefik/errorpages.md
       - Traefik Forward Auth: docker/traefik-forward-auth.md
+      - Docker Compose:
+        - Profile: docker/compose/profile.md
+        - Healthcheck: docker/compose/healthcheck.md
     - Сервисы: 
-      - Linx Server: docker/linx-server.md
       - Samba: docker/samba.md
       - Redis: docker/redis.md
       - MotionEye: docker/motioneye.md
-      - Media Server:
-        - Plex: docker/plex.md
+      - Plex: 
+        - docker/plex.md
         - Plex Meta Manager: docker/plex-mm.md
         - Plex Trakt Sync: docker/plextraktsync.md
+      - Homarr: docker/homarr.md
       - Nextcloud:
         - docker/nextcloud/index.md
         - During Scan: docker/nextcloud/during-scan.md
         - PHP imagick: docker/nextcloud/php-imagick.md
+        - Cron: docker/nextcloud/cron.md
+        - Проблемы с data: docker/nextcloud/problems-after-moving-data-folder.md
+      - Gitea: docker/gitea.md
+      - Drone CI: docker/drone.md
       - Игровые сервера:
         - Valheim: docker/games/valheim.md
-  - Ubuntu 22:
-      - HPE:
-          - Management Component Pack: ubuntu/hpe/hpe-mcp.md
+      - WikiJS: docker/wikijs.md
+      - HandBrake: docker/handbrake.md
+      - Pictshare: docker/pictshare.md
+      - Устарело:
+        - Linx Server: docker/linx-server.md
+  - Ubuntu Server:
+    - ubuntu/index.md
+    - Команды: ubuntu/commands.md
+    - Ошибки консоли: ubuntu/errors.md
+    - Добавление диска: ubuntu/add-disk.md
+    - Добавление S3: ubuntu/add-s3.md
+    - LVM: ubuntu/lvm.md
+    - Docker+UFW: ubuntu/docker-ufw.md
+    - Монтирование CIFS: ubuntu/mount-cifs.md
+    - Ubuntu bash aliases: ubuntu/bash-aliases.md
+    - Установка xRDP: ubuntu/xrdp.md
+    - Использование Proxy: ubuntu/proxy-system.md
+    - Watchdog: ubuntu/watchdog.md
+    - Backup:
+      - Google Диск: ubuntu/backup/google.md
+      - Yandex: ubuntu/backup/yandex.md
+      - Базы данных: ubuntu/backup/db.md
+    - WebDAV:
+      - Google Диск: ubuntu/webdav/google.md
+      - Yandex: ubuntu/webdav/yandex.md
+    - Софт:
       - MariaDB: ubuntu/mariadb.md
       - Telegraf: ubuntu/telegraf.md
-      - Docker+UFW: ubuntu/docker-ufw.md
-      - Монтирование CIFS: ubuntu/mount-cifs.md
+      - Redis: ubuntu/redis.md
+      - HPE:
+        - Management Component Pack: ubuntu/hpe/hpe-mcp.md
+      - NCDU: ubuntu/ncdu.md
+      - ctop: ubuntu/ctop.md
+  - Software:
+    - Powershell:
+      - software/powershell/index.md
+      - Active Directiry: software/powershell/ad.md
+      - Stop-Process: software/powershell/stop-process.md
+      - Count-Pages: software/powershell/count-pages.md
+      - Send-Mail: software/powershell/send-mail.md
+    - Chrome:
+      - Download bar: software/chrome/download-bar.md
+    - Windows:
+      - Servers:
+        - Удаление RUS US: software/win/serv/rusus.md
+        - CleanMGR: software/win/serv/cleanmgr.md
+        - SPP + Hyper-V: software/win/serv/spp-hyperv.md
+        - VHD: software/win/serv/vhd.md
+        - WIM в ESD: software/win/serv/wim-esd.md
+        - SQL Server: software/win/serv/mssql.md
+      - Desktop:
+        - Send To: software/win/desk/sendto.md
+        - Удаление hiberfil.sys: software/win/desk/del-hiberfil.md
+        - Удаление папок в МойКомп: software/win/desk/del-mycomp.md
+        - Удаление папки WindowsApps: software/win/desk/del-winapps.md
+        - Получить код OEM: software/win/desk/get-key-oem.md
+        - Не работает клавиша PrnScr: software/win/desk/prnscr.md
+        - TWINUI в свойствах файла: software/win/desk/twinui.md
+        - KMS: software/win/desk/kms.md
+        - Установка DialUX: software/win/desk/dialux.md
   - Proxmox:
+    - Proxmox VE:
+      - proxmox/index.md
       - CT Template: proxmox/ct-template.md
+  - Home Assistant:
+    - Addons:
+      - Zigbee2mqtt: hass/zigbee2mqtt.md
+    - Package: 
+      - hass/package/index.md
+      - Будильник: hass/package/budilnik.md
+    - Device:
+      - Xiaomi Airpurifier: hass/device/xiaomi-airpurifier.md
+    - Автоматизации:
+      - Триггеры:
+        - Время: hass/automation/trigger/time.md
   - Другое:
+    - Закрыть фишинговый сайт: other/close-phishing-site.md
     - SSL для сайта: other/ssl-for-site.md
-    - Ubuntu bash aliases: other/ubuntu-bash-aliases.md
+    - Self Hosted: other/self-hosted.md
+    - Hardware:
+      - HPE iLo: other/hardware/hpe-ilo.md
+      - Принтеры:
+        - Kyocera: other/hardware/printers/kyocera.md      
     - ТСД:
-      - Прошивка MC9090 на CE7.0: 
-        - other/tsd/index.md
-        - Переустановка ОС: other/tsd/reinstall-ce7.md
-        - Настройка ТСД: other/tsd/config-ce7.md
-        - Настройка Wi-Fi: other/tsd/config-wifi.md
-        - Настройка TelnetCE: other/tsd/config-telnetce.md
-        - Установка TelnetCE: other/tsd/install-telnetce.md
+      - other/tsd/index.md
+      - Переустановка ОС:
+        - CE 5.0: other/tsd/reinstall-os/ce5.md
+        - CE 7.0: other/tsd/reinstall-os/ce7.md
+        - WM 6.1: other/tsd/reinstall-os/m61.md
+      - Настройка ТСД: other/tsd/config-ce.md
+      - Настройка Wi-Fi: other/tsd/config-wifi.md
+      - Настройка TelnetCE: other/tsd/config-telnetce.md
+      - Установка TelnetCE: other/tsd/install-telnetce.md
+      - Траблшутинг: other/tsd/troubleshooting.md
     - Synology:
       - HPE Microserver Gen10: other/synology/install-hpe-ms-gen10.md
     - Office:
@@ -60,7 +144,7 @@ nav:
         - VBA Отправка почты: other/office/excel/vba-send-email.md
         - VBA Прогресс бар: other/office/excel/vba-progress-bar.md
         - VBA Удаление пароля: other/office/excel/vba-remove-pass.md
-    - Телефоны:
+    - IP Телефоны:
       - Grandstream:
         - Provisioning через TFTP: other/phone/grandstream/provisioning.md
         - Пример конфигурации: other/phone/grandstream/example-config.md
@@ -69,19 +153,35 @@ nav:
         - Книги: other/phone/ipecs-mg/books.md
         - Голосовые приветствия: other/phone/ipecs-mg/voice.md
   - Сеть:
+    - Утилиты:
+      - Wtraf: network/tools/wtraf.md
+      - Nmap: network/tools/nmap.md
     - Mikrotik:
+      - network/mikrotik/index.md
       - Wireguard: network/mikrotik/wireguard.md
+      - 4G Модем: network/mikrotik/4g.md
+      - Cloud Hosted Router: network/mikrotik/chr.md
+      - DHCP: network/mikrotik/dhcp.md
+      - Split-DNS: network/mikrotik/split-dns.md
+      - Hairpin NAT: network/mikrotik/hairpin-nat.md
+      - UPnP: network/mikrotik/upnp.md
+      - Обход блокировок: network/mikrotik/unblock-site.md
     - Ubiquiti:
       - Добавление новой точки: network/ubi/add-new-ap.md
       - Ошибка обновления: network/ubi/failed-update.md
+  - Игры:
+    - ARK Survival Evolved:
+      - Админские команды: games/ark/admin-commands.md
+    - Factorio:
+      - games/factorio/index.md
+    - Payday 2:
+      - VanillaHUD Plus: games/payday2/hud.md
   - Блог:
-    - Начальная: blog/index.md
-    - Traefik FA: blog/posts/traefik-fa.md
-
+    - Blog: blog/index.md
 
 theme:
   name: material
-  #custom_dir: overrides
+  theme_dir: overrides
   language: ru
   logo: images/st1t_white.png
   favicon: images/st1t_blue.png
@@ -118,10 +218,9 @@ theme:
     code: Jet Brains Mono
 
   features:
-    #- navigation.instant
     - navigation.sections # prevents collapsible sections
     - navigation.indexes # section index pages
-    - navigation.expand #expands sections by default
+    #- navigation.expand #expands sections by default
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
@@ -134,18 +233,16 @@ theme:
     - header.autohide
     - announce.dismiss
     - toc.follow
-  # insiders only
-  #   - search.suggest
 
 plugins:
+  #- meta
   - search:
       lang: 
         - ru
         - en
   - glightbox
-  - blogging:
-      dirs: # The directories to be included
-        - blog
+  - blog:
+      post_url_format: "{date}/{slug}"
   - git-revision-date-localized:
       type: custom
       custom_format: "%d.%m.%Y"
@@ -182,3 +279,9 @@ extra:
   social:
     - icon: fontawesome/brands/discord
       link: https://discord.gg/xtsgTBf
+  analytics:
+    provider: google
+    property: G-E6GYT2D13K
+
+extra_css:
+  - stylesheets/extra.css

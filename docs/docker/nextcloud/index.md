@@ -1,4 +1,9 @@
-```env
+# Nextcloud - свое облако для файлов
+
+
+Запуск через docker-compose. Для начала создадим файл `.env` со следующим содержанием:
+
+```env title=".env"
 PUID=
 PGID=
 TZ=
@@ -8,22 +13,10 @@ NEXTCLOUD_DOMAIN_NAME=
 REDIS_PASSWORD=
 ```
 
-docker-compose.yml
+Далее создаем файл `docker-compose.yml`
 
-```yaml
+```yaml title="docker-compose.yml"
 version: "3.7"
-
-secrets:
-  nextcloud_admin_password:
-    file: $SECRETSDIR/nextcloud_admin_password # put admin password in this file
-  nextcloud_admin_user:
-    file: $SECRETSDIR/nextcloud_admin_user # put admin username in this file
-  nextcloud_postgres_db:
-    file: $SECRETSDIR/nextcloud_postgres_db # put postgresql db name in this file
-  nextcloud_postgres_password:
-    file: $SECRETSDIR/nextcloud_postgres_password # put postgresql password in this file
-  nextcloud_postgres_user:
-    file: $SECRETSDIR/nextcloud_postgres_user # put postgresql username in this file
 
 services:
   # Nextcloud Docker Application
@@ -52,12 +45,6 @@ services:
       - NEXTCLOUD_TRUSTED_DOMAIN=$NEXTCLOUD_DOMAIN_NAME
       - TRUSTED_PROXIES=172.18.0.253
       - OVERWRITEPROTOCOL=https
-    secrets:
-      - nextcloud_admin_password
-      - nextcloud_admin_user
-      - nextcloud_postgres_db
-      - nextcloud_postgres_password
-      - nextcloud_postgres_user
     labels:
       - com.centurylinklabs.watchtower.enable=False
 ```

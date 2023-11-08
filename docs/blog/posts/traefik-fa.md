@@ -1,13 +1,13 @@
+---
+draft: false 
+date: 2023-10-17
+---
 # Руководство по Traefik Forward Auth – Простая защита через Google SSO
-
-![](https://st1t.ru/wp-content/uploads/2022/11/traefik-forward-auth-google-flow-840x525.png)
-
-----------
 
 Хотите защитить свой стек Docker чем-то более надежным, чем обычная HTTP-аутентификация? Google OAuth2 SSO с Traefik Forward Auth — ваш выбор.
 
 Я был очень удивлен, узнав, что образ Thomseddon  [Traefik Forward Auth](https://github.com/thomseddon/traefik-forward-auth)  может защитить мои службы в Docker. Этот образ обеспечивает вход и аутентификацию OAuth/SSO для обратного прокси-сервера Traefik с использованием Traefik.
-
+<!-- more -->
 > Почему Traefik Google OAuth2 для служб Docker?
 > 
 > Google OAuth2 позволяет вам использовать свою учетную запись Google для входа в свои службы. Использование  **Google OAuth с Traefik**  позволит вам добавлять учетные записи в белый список, внедрять двухфакторную аутентификацию Google, а также обеспечивать единый вход (SSO) для ваших служб. Это не только обеспечивает удобство, поскольку вам не нужно часто входить в систему, но и повышает безопасность.

@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://st1t.ru/sitemap.xml

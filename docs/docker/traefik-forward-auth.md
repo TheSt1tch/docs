@@ -1,4 +1,8 @@
-[github.com](https://github.com/thomseddon/traefik-forward-auth)
+# Traefik Forward Auth
+
+[![](https://img.shields.io/github/stars/thomseddon/traefik-forward-auth?label=%E2%AD%90%20Stars)](https://github.com/thomseddon/traefik-forward-auth)
+[![](https://img.shields.io/github/v/release/thomseddon/traefik-forward-auth?label=%F0%9F%9A%80%20Release)](https://github.com/thomseddon/traefik-forward-auth/releases/latest)
+![Docker Pulls](https://img.shields.io/docker/pulls/thomseddon/traefik-forward-auth.svg)
 
 -   Бесшовно накладывает любой http-сервис на одну конечную точку (см.: `url-path`в [разделе «Конфигурация](https://github.com/thomseddon/traefik-forward-auth#configuration) ») .
 -   Поддерживает несколько поставщиков, включая Google и OpenID Connect (поддерживается Azure, Github, Salesforce и т. д.).
