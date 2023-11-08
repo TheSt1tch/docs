@@ -174,6 +174,7 @@ nav:
       - Админские команды: games/ark/admin-commands.md
     - Factorio:
       - games/factorio/index.md
+      - Мои чертежи: games/factorio/my-prints.md
     - Payday 2:
       - VanillaHUD Plus: games/payday2/hud.md
   - Блог:
