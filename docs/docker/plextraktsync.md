@@ -1,3 +1,5 @@
+[![](https://img.shields.io/github/stars/Taxel/PlexTraktSync?label=%E2%AD%90%20Stars)](https://github.com/Taxel/PlexTraktSync)
+
 Сервис добавляет двустороннюю сихронизацию между trakt.tv и Plex Media Server. Для этого требуется учетная запись trakt.tv, но без премиум-подписки Plex или VIP-подписки Trakt, в отличие от приложения Plex, предоставляемого Trakt.
 
 ## Функции
@@ -67,5 +69,3 @@ servers:
     urls:
     - http://plex:32400
 ```
-
-[Github](https://github.com/Taxel/PlexTraktSync){ .md-button .md-button--primary }
