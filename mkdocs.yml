@@ -169,6 +169,13 @@ nav:
     - Ubiquiti:
       - Добавление новой точки: network/ubi/add-new-ap.md
       - Ошибка обновления: network/ubi/failed-update.md
+  - Игры:
+    - ARK Survival Evolved:
+      - Админские команды: games/ark/admin-commands.md
+    - Factorio:
+      - games/factorio/index.md
+    - Payday 2:
+      - VanillaHUD Plus: games/payday2/hud.md
   - Блог:
     - Blog: blog/index.md
 
@@ -264,17 +271,3 @@ markdown_extensions:
   - pymdownx.keys
 
 copyright: 2023 &copy; TheSt1tch - Licensed under GPLv3
-
-extra:
-  status:
-    new: Recently added
-    deprecated: Deprecated
-  social:
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/xtsgTBf
-  analytics:
-    provider: google
-    property: G-E6GYT2D13K
-
-extra_css:
-  - stylesheets/extra.css
