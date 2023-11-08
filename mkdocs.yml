@@ -169,13 +169,6 @@ nav:
     - Ubiquiti:
       - Добавление новой точки: network/ubi/add-new-ap.md
       - Ошибка обновления: network/ubi/failed-update.md
-  - Игры:
-    - ARK Survival Evolved:
-      - Админские команды: games/ark/admin-commands.md
-    - Factorio:
-      - games/factorio/index.md
-    - Payday 2:
-      - VanillaHUD Plus: games/payday2/hud.md
   - Блог:
     - Blog: blog/index.md
 
