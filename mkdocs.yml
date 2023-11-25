@@ -38,6 +38,7 @@ nav:
       - Drone CI: docker/drone.md
       - Игровые сервера:
         - Valheim: docker/games/valheim.md
+        - Factorio: docker/games/factorio.md
       - WikiJS: docker/wikijs.md
       - HandBrake: docker/handbrake.md
       - Pictshare: docker/pictshare.md
@@ -175,6 +176,7 @@ nav:
     - Factorio:
       - games/factorio/index.md
       - Мои чертежи: games/factorio/my-prints.md
+      - Чертежи сообщества: games/factorio/blueprints.md
     - Payday 2:
       - VanillaHUD Plus: games/payday2/hud.md
   - Блог:
