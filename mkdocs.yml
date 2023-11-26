@@ -145,6 +145,8 @@ nav:
         - VBA Отправка почты: other/office/excel/vba-send-email.md
         - VBA Прогресс бар: other/office/excel/vba-progress-bar.md
         - VBA Удаление пароля: other/office/excel/vba-remove-pass.md
+      - Outlook:
+        - Ошибки: other/office/outlook/error.md
     - IP Телефоны:
       - Grandstream:
         - Provisioning через TFTP: other/phone/grandstream/provisioning.md
