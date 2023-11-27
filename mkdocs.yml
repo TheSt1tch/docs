@@ -49,6 +49,7 @@ nav:
     - Команды: ubuntu/commands.md
     - Ошибки консоли: ubuntu/errors.md
     - Добавление диска: ubuntu/add-disk.md
+    - Расширение раздела: ubuntu/resize-part.md
     - Добавление S3: ubuntu/add-s3.md
     - LVM: ubuntu/lvm.md
     - Docker+UFW: ubuntu/docker-ufw.md
