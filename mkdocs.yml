@@ -99,6 +99,8 @@ nav:
         - TWINUI в свойствах файла: software/win/desk/twinui.md
         - KMS: software/win/desk/kms.md
         - Установка DialUX: software/win/desk/dialux.md
+    - VS Code:
+      - Запрос учетных данных Git: software/vscode/asking-git-credentials.md
   - Proxmox:
     - Proxmox VE:
       - proxmox/index.md
