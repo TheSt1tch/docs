@@ -80,6 +80,7 @@ nav:
       - Stop-Process: software/powershell/stop-process.md
       - Count-Pages: software/powershell/count-pages.md
       - Send-Mail: software/powershell/send-mail.md
+      - Обновление времени: software/powershell/update-time.md
     - Chrome:
       - Download bar: software/chrome/download-bar.md
     - Windows:
