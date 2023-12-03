@@ -201,13 +201,7 @@ theme:
     repo: simple/gitea
     #logo: images/st1t_white.png
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      scheme: default
-      toggle:
-        icon: material/brightness-auto
-        name: Авто
-
+  
     # Toggle light mode 
     - media: "(prefers-color-scheme: light)"       
       scheme: default
