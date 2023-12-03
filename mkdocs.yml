@@ -81,6 +81,7 @@ nav:
       - Count-Pages: software/powershell/count-pages.md
       - Send-Mail: software/powershell/send-mail.md
       - Обновление времени: software/powershell/update-time.md
+      - Get-Content: software/powershell/get-content.md
     - Chrome:
       - Download bar: software/chrome/download-bar.md
     - Windows:
