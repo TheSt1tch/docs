@@ -38,6 +38,7 @@ nav:
       - Drone CI: docker/drone.md
       - Игровые сервера:
         - Valheim: docker/games/valheim.md
+        - Factorio: docker/games/factorio.md
       - WikiJS: docker/wikijs.md
       - HandBrake: docker/handbrake.md
       - Pictshare: docker/pictshare.md
@@ -48,6 +49,7 @@ nav:
     - Команды: ubuntu/commands.md
     - Ошибки консоли: ubuntu/errors.md
     - Добавление диска: ubuntu/add-disk.md
+    - Расширение раздела: ubuntu/resize-part.md
     - Добавление S3: ubuntu/add-s3.md
     - LVM: ubuntu/lvm.md
     - Docker+UFW: ubuntu/docker-ufw.md
@@ -78,6 +80,8 @@ nav:
       - Stop-Process: software/powershell/stop-process.md
       - Count-Pages: software/powershell/count-pages.md
       - Send-Mail: software/powershell/send-mail.md
+      - Обновление времени: software/powershell/update-time.md
+      - Get-Content: software/powershell/get-content.md
     - Chrome:
       - Download bar: software/chrome/download-bar.md
     - Windows:
@@ -98,6 +102,8 @@ nav:
         - TWINUI в свойствах файла: software/win/desk/twinui.md
         - KMS: software/win/desk/kms.md
         - Установка DialUX: software/win/desk/dialux.md
+    - VS Code:
+      - Запрос учетных данных Git: software/vscode/asking-git-credentials.md
   - Proxmox:
     - Proxmox VE:
       - proxmox/index.md
@@ -144,6 +150,8 @@ nav:
         - VBA Отправка почты: other/office/excel/vba-send-email.md
         - VBA Прогресс бар: other/office/excel/vba-progress-bar.md
         - VBA Удаление пароля: other/office/excel/vba-remove-pass.md
+      - Outlook:
+        - Ошибки: other/office/outlook/error.md
     - IP Телефоны:
       - Grandstream:
         - Provisioning через TFTP: other/phone/grandstream/provisioning.md
@@ -174,8 +182,12 @@ nav:
       - Админские команды: games/ark/admin-commands.md
     - Factorio:
       - games/factorio/index.md
+      - Мои чертежи: games/factorio/my-prints.md
+      - Чертежи сообщества: games/factorio/blueprints.md
     - Payday 2:
       - VanillaHUD Plus: games/payday2/hud.md
+    - Path of Exile: 
+      - Ссылки: games/path-of-exile/links.md
   - Блог:
     - Blog: blog/index.md
 
@@ -189,13 +201,7 @@ theme:
     repo: simple/gitea
     #logo: images/st1t_white.png
   palette:
-    # Palette toggle for automatic mode
-    - media: "(prefers-color-scheme)"
-      scheme: default
-      toggle:
-        icon: material/brightness-auto
-        name: Авто
-
+  
     # Toggle light mode 
     - media: "(prefers-color-scheme: light)"       
       scheme: default
