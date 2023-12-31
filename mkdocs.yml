@@ -60,7 +60,7 @@ nav:
     - Установка xRDP: ubuntu/xrdp.md
     - Использование Proxy: ubuntu/proxy-system.md
     - Watchdog: ubuntu/watchdog.md
-    - Обновление версии: ubuntu/upgrade-dist.md
+    - Обновление дистрибутива: ubuntu/upgrade-dist.md
     - Backup:
       - Google Диск: ubuntu/backup/google.md
       - Yandex: ubuntu/backup/yandex.md
