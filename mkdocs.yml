@@ -15,7 +15,9 @@ nav:
         - docker/traefik.md
         - TCP Route: docker/traefik/tcp-routes.md
         - Error Pages: docker/traefik/errorpages.md
-      - Traefik Forward Auth: docker/traefik-forward-auth.md
+        - Forward Auth: 
+          - docker/traefik/forward-auth.md
+          - Google SSO: forward-auth-google-sso.md
       - Docker Compose:
         - Profile: docker/compose/profile.md
         - Healthcheck: docker/compose/healthcheck.md
@@ -58,6 +60,7 @@ nav:
     - Установка xRDP: ubuntu/xrdp.md
     - Использование Proxy: ubuntu/proxy-system.md
     - Watchdog: ubuntu/watchdog.md
+    - Обновление версии: ubuntu/upgrade-dist.md
     - Backup:
       - Google Диск: ubuntu/backup/google.md
       - Yandex: ubuntu/backup/yandex.md
