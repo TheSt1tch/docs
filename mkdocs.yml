@@ -36,12 +36,14 @@ nav:
         - Проблемы с data: docker/nextcloud/problems-after-moving-data-folder.md
       - Gitea: docker/gitea.md
       - Drone CI: docker/drone.md
+      - Socket Proxy: docker/socket-proxy.md
       - Игровые сервера:
         - Valheim: docker/games/valheim.md
         - Factorio: docker/games/factorio.md
       - WikiJS: docker/wikijs.md
       - HandBrake: docker/handbrake.md
       - Pictshare: docker/pictshare.md
+      - Grafana+Prometheus: docker/grafana-prometheus.md
       - Устарело:
         - Linx Server: docker/linx-server.md
   - Ubuntu Server:
