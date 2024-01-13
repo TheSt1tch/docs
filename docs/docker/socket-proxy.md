@@ -1,3 +1,4 @@
+# Docker Socket Proxy
 
 [![](https://img.shields.io/badge/Github-blue)](https://github.com/fluencelabs/docker-socket-proxy)
 [![](https://img.shields.io/github/stars/fluencelabs/docker-socket-proxy?label=%E2%AD%90%20Stars)](https://github.com/fluencelabs/docker-socket-proxy)
