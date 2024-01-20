@@ -11,41 +11,40 @@ nav:
       - Установка: docker.md
       - Безопасность: docker/security.md
     - В начале:
+      - Docker Compose:
+        - Profile: docker/compose/profile.md
+        - Healthcheck: docker/compose/healthcheck.md
       - Traefik: 
         - docker/traefik.md
         - TCP Route: docker/traefik/tcp-routes.md
         - Error Pages: docker/traefik/errorpages.md
       - Traefik Forward Auth: docker/traefik-forward-auth.md
-      - Docker Compose:
-        - Profile: docker/compose/profile.md
-        - Healthcheck: docker/compose/healthcheck.md
     - Сервисы: 
-      - Samba: docker/samba.md
-      - Redis: docker/redis.md
-      - MotionEye: docker/motioneye.md
-      - Plex: 
-        - docker/plex.md
-        - Plex Meta Manager: docker/plex-mm.md
-        - Plex Trakt Sync: docker/plextraktsync.md
+      - Drone CI: docker/drone.md
+      - Gitea: docker/gitea.md
+      - Grafana+Prometheus: docker/grafana-prometheus.md
+      - HandBrake: docker/handbrake.md
       - Homarr: docker/homarr.md
+      - Linx Server: docker/linx-server.md
+      - MotionEye: docker/motioneye.md
       - Nextcloud:
         - docker/nextcloud/index.md
         - During Scan: docker/nextcloud/during-scan.md
         - PHP imagick: docker/nextcloud/php-imagick.md
         - Cron: docker/nextcloud/cron.md
         - Проблемы с data: docker/nextcloud/problems-after-moving-data-folder.md
-      - Gitea: docker/gitea.md
-      - Drone CI: docker/drone.md
-      - Socket Proxy: docker/socket-proxy.md
-      - Игровые сервера:
-        - Valheim: docker/games/valheim.md
-        - Factorio: docker/games/factorio.md
-      - WikiJS: docker/wikijs.md
-      - HandBrake: docker/handbrake.md
       - Pictshare: docker/pictshare.md
-      - Grafana+Prometheus: docker/grafana-prometheus.md
-      - Устарело:
-        - Linx Server: docker/linx-server.md
+      - Plex: 
+        - docker/plex.md
+        - Plex Meta Manager: docker/plex-mm.md
+        - Plex Trakt Sync: docker/plextraktsync.md
+      - Redis: docker/redis.md
+      - Samba: docker/samba.md
+      - Socket Proxy: docker/socket-proxy.md
+      - WikiJS: docker/wikijs.md
+    - Игровые сервера:
+      - Valheim: docker/games/valheim.md
+      - Factorio: docker/games/factorio.md             
   - Ubuntu Server:
     - ubuntu/index.md
     - Команды: ubuntu/commands.md
