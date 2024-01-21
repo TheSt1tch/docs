@@ -233,9 +233,8 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
-    - navigation.pruning
+    - navigation.prune
     - navigation.path
-    - navigation.footer
     - search.suggest
     - search.share
     - content.code.annotate
