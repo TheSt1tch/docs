@@ -1,6 +1,6 @@
 # Ошибки в Docker
 
-## WARNING: Error loading config file" при вводе команд
+## WARNING: Error loading config file
 
 При выполнении любой команды, например `docker run --rm -ti ubuntu:14.04 /bin/bash` выдаетс ошибка 
 
