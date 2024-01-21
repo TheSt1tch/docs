@@ -235,6 +235,7 @@ theme:
     - navigation.top
     - navigation.pruning
     - navigation.path
+    - navigation.footer
     - search.suggest
     - search.share
     - content.code.annotate
