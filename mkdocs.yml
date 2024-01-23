@@ -112,6 +112,7 @@ nav:
       - proxmox/index.md
       - CT Template: proxmox/ct-template.md
   - Home Assistant:
+    - Установка на Debian: hass/install-hass-debian.md
     - Addons:
       - Zigbee2mqtt: hass/zigbee2mqtt.md
     - Package: 
