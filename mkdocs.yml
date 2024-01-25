@@ -19,7 +19,7 @@ nav:
         - docker/traefik.md
         - TCP Route: docker/traefik/tcp-routes.md
         - Error Pages: docker/traefik/errorpages.md
-      - Traefik Forward Auth: docker/traefik-forward-auth.md
+        - Forward Auth: docker/traefik/forward-auth.md
     - Сервисы: 
       - Drone CI: docker/drone.md
       - Gitea: docker/gitea.md
