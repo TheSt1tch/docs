@@ -42,6 +42,7 @@ nav:
         - Plex Trakt Sync: docker/plextraktsync.md
       - Redis: docker/redis.md
       - Samba: docker/samba.md
+      - Syncthing: docker/syncthing.md
       - Socket Proxy: docker/socket-proxy.md
       - WikiJS: docker/wikijs.md
     - Игровые сервера:
