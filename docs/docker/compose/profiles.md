@@ -1,14 +1,15 @@
 # Docker Compose Profile - профили
 
 Те, кто юзает docker-compose, обычно делятся на 2 типа: 
+
 - пихаем все в 1 файл на каждый хост
 - пихаем в разные файлы с какой-то логикой
 
-Что, если я напишу, что можно совместить эти 2 типа людей. 1 файл, но с разбивкой по профилям с какой-то логикой. Звучи правда классно?
+А что если я напишу, что можно совместить эти 2 типа людей. Один файл, но с разбивкой по профилям с какой-то логикой. Звучит правда классно?
 
 Возьмем классический монолитный файл docker-compose:
 
-```yaml title="docker-compose.yaml"
+```yaml title="docker-compose.yml"
 version: "3.9"
 services:
   nginx1:
@@ -43,7 +44,6 @@ user@test tmp % docker-compose --profile test up -d
  !!! note
 
     Eсли включаем профиль, то простой вариант docker-compose up -d не выполнится:
-
     ```bash
     user@test tmp % docker-compose up -d
     no service selected

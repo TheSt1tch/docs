@@ -13,7 +13,7 @@ nav:
       - Ошибки: docker/error.md
     - В начале:
       - Docker Compose:
-        - Profile: docker/compose/profile.md
+        - Profiles: docker/compose/profiles.md
         - Healthcheck: docker/compose/healthcheck.md
       - Traefik: 
         - docker/traefik.md
