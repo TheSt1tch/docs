@@ -8,7 +8,7 @@ nav:
   - Привет!: index.md
   - 🐳 Docker: 
     - Подготовка:
-      - Установка: docker/docker.md
+      - Установка: docker/install.md
       - Безопасность: docker/security.md
       - Ошибки: docker/error.md
     - В начале:
@@ -21,6 +21,7 @@ nav:
         - Error Pages: docker/traefik/errorpages.md
         - Forward Auth: docker/traefik/forward-auth.md
     - Сервисы: 
+      - Autoscan: docker/autoscan.md 
       - Drone CI: docker/drone.md
       - Gitea: docker/gitea.md
       - Grafana+Prometheus: docker/grafana-prometheus.md
