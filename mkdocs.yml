@@ -48,7 +48,8 @@ nav:
       - WikiJS: docker/wikijs.md
     - Игровые сервера:
       - Valheim: docker/games/valheim.md
-      - Factorio: docker/games/factorio.md             
+      - Factorio: docker/games/factorio.md
+      - ARK Survival Evolved: docker/games/ark-se.md
   - Ubuntu Server:
     - ubuntu/index.md
     - Команды: ubuntu/commands.md
