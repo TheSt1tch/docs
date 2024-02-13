@@ -283,4 +283,4 @@ markdown_extensions:
   - pymdownx.superfences # allows for the nesting of code blocks inside other blocks
   - pymdownx.keys
 
-copyright: 2023 &copy; TheSt1tch - Licensed under GPLv3
+copyright: 2024 &copy; TheSt1tch - Licensed under GPLv3
