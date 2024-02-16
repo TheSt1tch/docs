@@ -11,17 +11,15 @@ nav:
       - Установка: docker/install.md
       - Безопасность: docker/security.md
       - Ошибки: docker/error.md
-    - В начале:
       - Docker Compose:
-        - Profiles: docker/compose/profiles.md
         - Healthcheck: docker/compose/healthcheck.md
+        - Profiles: docker/compose/profiles.md
       - Traefik: 
-        - docker/traefik.md
-        - TCP Route: docker/traefik/tcp-routes.md
+        - docker/traefik/index.md
         - Error Pages: docker/traefik/errorpages.md
         - Forward Auth: docker/traefik/forward-auth.md
+        - TCP Route: docker/traefik/tcp-routes.md
     - Сервисы: 
-      - Autoscan: docker/autoscan.md 
       - Drone CI: docker/drone.md
       - Gitea: docker/gitea.md
       - Grafana+Prometheus: docker/grafana-prometheus.md
@@ -38,9 +36,15 @@ nav:
         - OCC: docker/nextcloud/occ-files-scan.md
       - Pictshare: docker/pictshare.md
       - Plex: 
-        - docker/plex.md
+        - docker/plex/index.md
+        - Autoscan: docker/autoscan.md
+        #- Jacket: 
         - Plex Meta Manager: docker/plex-mm.md
         - Plex Trakt Sync: docker/plextraktsync.md
+        #- Prowlarr
+        #- Overseerr:
+        #- Radarr: 
+        #- Sonarr:
       - Redis: docker/redis.md
       - Samba: docker/samba.md
       - Syncthing: docker/syncthing.md

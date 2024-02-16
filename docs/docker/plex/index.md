@@ -1,3 +1,5 @@
+# Plex
+
 Plex можно устанавливать разными способами, через **пакет**, через **docker-cli** и **docker compose**. Я предпочитаю **Docker Compose**.
 
 Ниже будет приведен файл Docker Compose. 
@@ -33,6 +35,7 @@ services:
 ```
 
 Удаление мусора из PhotoTranscoder
+
 ```bash
 find "/home/plex/plexconfig/Library/Application Support/Plex Media Server/Cache/PhotoTranscoder" -name "*.jpg" -type f -mtime +5 -delete
 ```
