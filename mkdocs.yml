@@ -37,10 +37,10 @@ nav:
       - Pictshare: docker/pictshare.md
       - Plex: 
         - docker/plex/index.md
-        - Autoscan: docker/autoscan.md
+        - Autoscan: docker/plex/autoscan.md
         #- Jacket: 
-        - Plex Meta Manager: docker/plex-mm.md
-        - Plex Trakt Sync: docker/plextraktsync.md
+        - Plex Meta Manager: docker/plex/plex-mm.md
+        - Plex Trakt Sync: docker/plex/plextraktsync.md
         #- Prowlarr
         #- Overseerr:
         #- Radarr: 
