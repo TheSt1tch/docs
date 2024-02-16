@@ -1,7 +1,8 @@
 # Autoscan - автоскан для Plex на Go
 
-[![](https://img.shields.io/github/stars/Cloudbox/autoscan?label=%E2%AD%90%20Stars)](https://github.com/Cloudbox/autoscan)
-[![](https://img.shields.io/github/v/release/Cloudbox/autoscan?label=%F0%9F%9A%80%20Release)](https://github.com/Cloudbox/autoscan/releases/latest)
+[![](https://img.shields.io/github/stars/Cloudbox/autoscan?label=%E2%AD%90%20Stars&style=flat-square)](https://github.com/Cloudbox/autoscan)
+[![](https://img.shields.io/github/v/release/Cloudbox/autoscan?label=%F0%9F%9A%80%20Release&style=flat-square)](https://github.com/Cloudbox/autoscan/releases/latest)
+[![Docker Pulls](https://img.shields.io/docker/pulls/cloudb0x/autoscan.svg?maxAge=60&style=flat-square)](https://hub.docker.com/r/cloudb0x/autoscan/)
 
 Autoscan - заменяет поведение **Plex** и **Emby** по умолчанию для обнаружения изменений в файловой системе. Autoscan интегрируется с **Sonarr**, **Radarr**, **Readarr**, **Lidarr** и **Google Drive** для получения изменений практически в реальном времени, не полагаясь на файловую систему.
 

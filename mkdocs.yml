@@ -38,7 +38,7 @@ nav:
       - Plex: 
         - docker/plex/index.md
         - Autoscan: docker/plex/autoscan.md
-        #- Jacket: 
+        - Jacket: docker/plex/jackett.md
         - Plex Meta Manager: docker/plex/plex-mm.md
         - Plex Trakt Sync: docker/plex/plextraktsync.md
         #- Prowlarr
