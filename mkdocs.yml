@@ -38,7 +38,7 @@ nav:
       - Plex: 
         - docker/plex/index.md
         - Autoscan: docker/plex/autoscan.md
-        - Jacket: docker/plex/jackett.md
+        - Jackett: docker/plex/jackett.md
         - Plex Meta Manager: docker/plex/plex-mm.md
         - Plex Trakt Sync: docker/plex/plextraktsync.md
         #- Prowlarr
@@ -118,18 +118,21 @@ nav:
     - Proxmox VE:
       - proxmox/index.md
       - CT Template: proxmox/ct-template.md
-  - Home Assistant:
-    - Установка на Debian: hass/install-hass-debian.md
-    - Addons:
-      - Zigbee2mqtt: hass/zigbee2mqtt.md
-    - Package: 
-      - hass/package/index.md
-      - Будильник: hass/package/budilnik.md
-    - Device:
-      - Xiaomi Airpurifier: hass/device/xiaomi-airpurifier.md
-    - Автоматизации:
-      - Триггеры:
-        - Время: hass/automation/trigger/time.md
+  - Умный дом:
+    - Home Assistant:
+      - Установка на Debian: smart-home/hass/install-hass-debian.md
+      - Addons:
+        - Zigbee2mqtt: smart-home/hass/zigbee2mqtt.md
+      - Package: 
+        - smart-home/hass/package/index.md
+        - Будильник: smart-home/hass/package/budilnik.md
+      - Device:
+        - Xiaomi Airpurifier: smart-home/hass/device/xiaomi-airpurifier.md
+      - Автоматизации:
+        - Триггеры:
+          - Время: smart-home/hass/automation/trigger/time.md
+    - Wirenboard:
+      - Новый контроллер: smart-home/wirenboard/new-controller.md
   - Другое:
     - Закрыть фишинговый сайт: other/close-phishing-site.md
     - SSL для сайта: other/ssl-for-site.md
@@ -184,7 +187,7 @@ nav:
       - Split-DNS: network/mikrotik/split-dns.md
       - Hairpin NAT: network/mikrotik/hairpin-nat.md
       - UPnP: network/mikrotik/upnp.md
-      - Обход блокировок: network/mikrotik/unblock-site.md
+      #- Обход блокировок: network/mikrotik/unblock-site.md
     - Ubiquiti:
       - Добавление новой точки: network/ubi/add-new-ap.md
       - Ошибка обновления: network/ubi/failed-update.md
