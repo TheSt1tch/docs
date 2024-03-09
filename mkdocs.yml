@@ -284,7 +284,7 @@ markdown_extensions:
       permalink: false
       toc_depth: 3
   - pymdownx.highlight: # code highlighting
-      linenums: true
+      linenums: false
   - pymdownx.tabbed: # enables tabs for embedded blocks
       alternate_style: true 
   - pymdownx.snippets
