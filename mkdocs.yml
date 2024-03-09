@@ -118,6 +118,7 @@ nav:
     - Proxmox VE:
       - proxmox/index.md
       - CT Template: proxmox/ct-template.md
+      - Nvidia LXC: proxmox/nvidia-lxc.md
   - Умный дом:
     - Home Assistant:
       - Установка на Debian: smart-home/hass/install-hass-debian.md
