@@ -183,6 +183,8 @@ curl -s -L https://nvidia.github.io/libnvidia-container/stable/deb/nvidia-contai
 apt update
 apt install nvidia-container-toolkit
 
+nvidia-ctk runtime configure --runtime=docker
+
 systemctl daemon-reload
 systemctl restart docker
 ```
@@ -225,11 +227,13 @@ services:
     profiles:
       - plex
     restart: unless-stopped
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - capabilities: [gpu]
+    runtime: nvidia # закоментить, если образ plexinc/pms-docker
+    # Использование строк ниже, если образ plexinc/pms-docker
+    #deploy:
+    #  resources:
+    #    reservations:
+    #      devices:
+    #        - capabilities: [gpu]
     ports:
       - "32400:32400"
       - "32400:32400/udp"
