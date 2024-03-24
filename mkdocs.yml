@@ -39,10 +39,10 @@ nav:
         - docker/plex/index.md
         - Autoscan: docker/plex/autoscan.md
         - Jackett: docker/plex/jackett.md
+        #- Overseerr:
         - Plex Meta Manager: docker/plex/plex-mm.md
         - Plex Trakt Sync: docker/plex/plextraktsync.md
-        #- Prowlarr
-        #- Overseerr:
+        - Prowlarr: docker/plex/prowlarr.md
         #- Radarr: 
         #- Sonarr:
       - Redis: docker/redis.md
@@ -94,6 +94,7 @@ nav:
       - Get-Content: software/powershell/get-content.md
     - Chrome:
       - Download bar: software/chrome/download-bar.md
+      - Блокировка медиакнопок: software/chrome/block-mediabutton.md
     - Windows:
       - Servers:
         - Удаление RUS US: software/win/serv/rusus.md
