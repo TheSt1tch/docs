@@ -189,7 +189,7 @@ nav:
       - Split-DNS: network/mikrotik/split-dns.md
       - Hairpin NAT: network/mikrotik/hairpin-nat.md
       - UPnP: network/mikrotik/upnp.md
-      #- Обход блокировок: network/mikrotik/unblock-site.md
+      - Обход блокировок: network/mikrotik/unblock-site.md
     - Ubiquiti:
       - Добавление новой точки: network/ubi/add-new-ap.md
       - Ошибка обновления: network/ubi/failed-update.md
