@@ -1,0 +1,3 @@
+steps:
+  buildDocs:
+    image: woodpeckerci/plugin-mkdocs:latest
