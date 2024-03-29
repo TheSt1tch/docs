@@ -33,3 +33,65 @@ services:
       - DRONE_RUNNER_NAME=whatsinaname
     restart: unless-stopped
 ```
+
+## Примеры
+
+### Нотификация в telegram
+
+```yaml
+- name: telgram_notify
+  image: appleboy/drone-telegram
+  when:
+    status:
+      #- success
+      - failure
+  settings:
+    # The secrets below can be entered from the Drone UI for this repo
+    token:
+      from_secret: telegram_token
+    to:
+      from_secret: telegram_chat_id
+    format: markdown
+    message: >
+      {{#success build.status}}
+      ✅ Build #{{build.number}} of `{{repo.name}}` succeeded.
+      📝 Commit by {{commit.author}} on `{{commit.branch}}`:
+      ```
+      {{commit.message}}
+      ```
+      🌐 {{ build.link }}
+      {{else}}
+      ❌ Build #{{build.number}} of `{{repo.name}}` failed.
+      📝 Commit by {{commit.author}} on `{{commit.branch}}`:
+      ```
+      {{commit.message}}
+      ```
+      🌐 {{ build.link }}
+      {{/success}}
+```
+
+### Сборка mcdocs
+
+```yaml
+- name: build states
+  image: squidfunk/mkdocs-material:latest:latest
+  pull: if-not-exists
+  volumes:
+  - name: site
+    path: /site
+  commands:
+    - mkdocs build
+    - cp -r site/ /site
+    - chown 1000:1000 /site
+    - chmod -R 777 /site
+  when:
+    event: 
+      - push
+    branch: 
+      - states/*
+
+volumes:
+- name: site
+  host:
+    path: /opt/appdata/mkdocswiki
+```

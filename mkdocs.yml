@@ -8,42 +8,52 @@ nav:
   - Привет!: index.md
   - 🐳 Docker: 
     - Подготовка:
-      - Установка: docker.md
+      - Установка: docker/install.md
       - Безопасность: docker/security.md
-    - В начале:
-      - Traefik: 
-        - docker/traefik.md
-        - TCP Route: docker/traefik/tcp-routes.md
-        - Error Pages: docker/traefik/errorpages.md
-      - Traefik Forward Auth: docker/traefik-forward-auth.md
+      - Ошибки: docker/error.md
       - Docker Compose:
-        - Profile: docker/compose/profile.md
         - Healthcheck: docker/compose/healthcheck.md
+        - Profiles: docker/compose/profiles.md
+      - Traefik: 
+        - docker/traefik/index.md
+        - Error Pages: docker/traefik/errorpages.md
+        - Forward Auth: docker/traefik/forward-auth.md
+        - TCP Route: docker/traefik/tcp-routes.md
     - Сервисы: 
-      - Samba: docker/samba.md
-      - Redis: docker/redis.md
-      - MotionEye: docker/motioneye.md
-      - Plex: 
-        - docker/plex.md
-        - Plex Meta Manager: docker/plex-mm.md
-        - Plex Trakt Sync: docker/plextraktsync.md
+      - Drone CI: docker/drone.md
+      - Gitea: docker/gitea.md
+      - Grafana+Prometheus: docker/grafana-prometheus.md
+      - HandBrake: docker/handbrake.md
       - Homarr: docker/homarr.md
+      - Linx Server: docker/linx-server.md
+      - MotionEye: docker/motioneye.md
       - Nextcloud:
         - docker/nextcloud/index.md
         - During Scan: docker/nextcloud/during-scan.md
         - PHP imagick: docker/nextcloud/php-imagick.md
         - Cron: docker/nextcloud/cron.md
         - Проблемы с data: docker/nextcloud/problems-after-moving-data-folder.md
-      - Gitea: docker/gitea.md
-      - Drone CI: docker/drone.md
-      - Игровые сервера:
-        - Valheim: docker/games/valheim.md
-        - Factorio: docker/games/factorio.md
-      - WikiJS: docker/wikijs.md
-      - HandBrake: docker/handbrake.md
+        - OCC: docker/nextcloud/occ-files-scan.md
       - Pictshare: docker/pictshare.md
-      - Устарело:
-        - Linx Server: docker/linx-server.md
+      - Plex: 
+        - docker/plex/index.md
+        - Autoscan: docker/plex/autoscan.md
+        - Jackett: docker/plex/jackett.md
+        #- Overseerr:
+        - Plex Meta Manager: docker/plex/plex-mm.md
+        - Plex Trakt Sync: docker/plex/plextraktsync.md
+        - Prowlarr: docker/plex/prowlarr.md
+        #- Radarr: 
+        #- Sonarr:
+      - Redis: docker/redis.md
+      - Samba: docker/samba.md
+      - Syncthing: docker/syncthing.md
+      - Socket Proxy: docker/socket-proxy.md
+      - WikiJS: docker/wikijs.md
+    - Игровые сервера:
+      - Valheim: docker/games/valheim.md
+      - Factorio: docker/games/factorio.md
+      - ARK Survival Evolved: docker/games/ark-se.md
   - Ubuntu Server:
     - ubuntu/index.md
     - Команды: ubuntu/commands.md
@@ -84,6 +94,7 @@ nav:
       - Get-Content: software/powershell/get-content.md
     - Chrome:
       - Download bar: software/chrome/download-bar.md
+      - Блокировка медиакнопок: software/chrome/block-mediabutton.md
     - Windows:
       - Servers:
         - Удаление RUS US: software/win/serv/rusus.md
@@ -108,17 +119,22 @@ nav:
     - Proxmox VE:
       - proxmox/index.md
       - CT Template: proxmox/ct-template.md
-  - Home Assistant:
-    - Addons:
-      - Zigbee2mqtt: hass/zigbee2mqtt.md
-    - Package: 
-      - hass/package/index.md
-      - Будильник: hass/package/budilnik.md
-    - Device:
-      - Xiaomi Airpurifier: hass/device/xiaomi-airpurifier.md
-    - Автоматизации:
-      - Триггеры:
-        - Время: hass/automation/trigger/time.md
+      - Nvidia LXC: proxmox/nvidia-lxc.md
+  - Умный дом:
+    - Home Assistant:
+      - Установка на Debian: smart-home/hass/install-hass-debian.md
+      - Addons:
+        - Zigbee2mqtt: smart-home/hass/zigbee2mqtt.md
+      - Package: 
+        - smart-home/hass/package/index.md
+        - Будильник: smart-home/hass/package/budilnik.md
+      - Device:
+        - Xiaomi Airpurifier: smart-home/hass/device/xiaomi-airpurifier.md
+      - Автоматизации:
+        - Триггеры:
+          - Время: smart-home/hass/automation/trigger/time.md
+    - Wirenboard:
+      - Новый контроллер: smart-home/wirenboard/new-controller.md
   - Другое:
     - Закрыть фишинговый сайт: other/close-phishing-site.md
     - SSL для сайта: other/ssl-for-site.md
@@ -230,7 +246,7 @@ theme:
     - navigation.tabs
     - navigation.tabs.sticky
     - navigation.top
-    - navigation.pruning
+    - navigation.prune
     - navigation.path
     - search.suggest
     - search.share
@@ -269,11 +285,11 @@ markdown_extensions:
       permalink: false
       toc_depth: 3
   - pymdownx.highlight: # code highlighting
-      linenums: true
+      linenums: false
   - pymdownx.tabbed: # enables tabs for embedded blocks
       alternate_style: true 
   - pymdownx.snippets
   - pymdownx.superfences # allows for the nesting of code blocks inside other blocks
   - pymdownx.keys
 
-copyright: 2023 &copy; TheSt1tch - Licensed under GPLv3
+copyright: 2024 &copy; TheSt1tch - Licensed under GPLv3

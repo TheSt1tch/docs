@@ -1,6 +1,6 @@
-# Обход блокировок
+# Обход блокировок Европейских сайтов
 
-Расписывать как поднять и настроить VPN через Wireguard или OpenVPN не буду. В сети достаточно инструкций. Чуть ниже слева есть еще одна от меня.
+Расписывать как поднять и настроить VPN через Wireguard или OpenVPN не буду. В сети достаточно инструкций.
 
 Варианта как обходить блокировки 2:
 
@@ -56,9 +56,7 @@ add Disabled=no name=unblock fib
     /routing bgp template
     add as="64999" disabled=no hold-time=4m input.filter=bgp_in .ignore-as-path-len=yes keepalive-time=1m multihop=yes name=antifilter routing-table=main
 
-    /routing bgp connection
-    add as=64999 disabled=no hold-time=4m input.filter=bgp_in \
-    .ignore-as-path-len=yes keepalive-time=1m local.address=<local_IP> .role=\
+    /routing bgp connection add as=64999 disabled=no hold-time=4m input.filter=bgp_in .ignore-as-path-len=yes keepalive-time=1m local.address=<local_IP> .role=\
     ebgp multihop=yes name=bgp-antifilter.net output.filter-chain=discard \
     remote.address=51.75.66.20/32 .as=65444 router-id=<WAN_IP> \
     routing-table=main templates=antifilter

@@ -4,29 +4,29 @@ type: docker
 name: build-home-docs
 
 steps:
-- name: build main
-  image: squidfunk/mkdocs-material:9.4.6
-  pull: if-not-exists
-  volumes:
-  - name: site
-    path: /site
-  commands:
-    - pip install -U -r ./requirements.txt
-    - mkdocs build
-    - cp -r site/ /site
-    - chown 1000:1000 /site
-    - chmod -R 777 /site
-  when:
-    event: 
-      - push
-    branch: 
-      - main
+#- name: build main
+#  image: squidfunk/mkdocs-material:9.4.6
+#  pull: if-not-exists
+#  volumes:
+#  - name: site
+#    path: /site
+#  commands:
+#    - pip install -U -r ./requirements.txt
+#    - mkdocs build
+#    - cp -r site/ /site
+#    - chown 1000:1000 /site
+#    - chmod -R 777 /site
+#  when:
+#    event: 
+#      - push
+#    branch: 
+#      - main
 
 - name: build states
-  image: git.st1t.ru/thest1tch/mkdocs-material:v9.4.6
+  image: git.st1t.ru/thest1tch/mkdocs-material:latest
   pull: if-not-exists
   volumes:
-  - name: site
+  - name: site-st1tru
     path: /site
   commands:
     - mkdocs build
@@ -38,36 +38,6 @@ steps:
       - push
     branch: 
       - states/*
-
-- name: telgram_notify
-  image: appleboy/drone-telegram
-  when:
-    status:
-      #- success
-      - failure
-  settings:
-    # The secrets below can be entered from the Drone UI for this repo
-    token:
-      from_secret: telegram_token
-    to:
-      from_secret: telegram_chat_id
-    format: markdown
-    message: >
-      {{#success build.status}}
-      ✅ Build #{{build.number}} of `{{repo.name}}` succeeded.
-      📝 Commit by {{commit.author}} on `{{commit.branch}}`:
-      ```
-      {{commit.message}}
-      ```
-      🌐 {{ build.link }}
-      {{else}}
-      ❌ Build #{{build.number}} of `{{repo.name}}` failed.
-      📝 Commit by {{commit.author}} on `{{commit.branch}}`:
-      ```
-      {{commit.message}}
-      ```
-      🌐 {{ build.link }}
-      {{/success}}
 
 volumes:
 - name: site
