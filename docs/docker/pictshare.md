@@ -11,7 +11,7 @@
 Запуск простой, через docker:
 
 ```bash
-docker run -d -p 8080:80 --name=pictshare ghcr.io/hascheksolutions/pictshare
+docker run -d -p 8080:80 -e "TITLE=My own PictShare" -e "URL=http://localhost/" hascheksolutions/pictshare:2
 ```
 
 После, открываем [http://localhost:8080/](http://localhost:8080) в браузере и пользуемся.
@@ -31,3 +31,4 @@ docker run -d -p 8080:80 --name=pictshare ghcr.io/hascheksolutions/pictshare
 - Дубликаты не занимают места. Если один и тот же файл загружается дважды, вторая загрузка будет связана с первой.
 - [Много возможностей для настройки](https://github.com/HaschekSolutions/pictshare/blob/master/rtfm/CONFIG.md)
 - Полный контроль над вашими данными. Удаление изображений с индивидуальными и глобальными кодами удаления
+
