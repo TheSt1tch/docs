@@ -25,6 +25,7 @@ nav:
       - Grafana+Prometheus: docker/grafana-prometheus.md
       - HandBrake: docker/handbrake.md
       - Homarr: docker/homarr.md
+      - Homepage: docker/homepage.md
       - Linx Server: docker/linx-server.md
       - MotionEye: docker/motioneye.md
       - Nextcloud:
