@@ -4,25 +4,7 @@ type: docker
 name: build-home-docs
 
 steps:
-#- name: build main
-#  image: squidfunk/mkdocs-material:9.4.6
-#  pull: if-not-exists
-#  volumes:
-#  - name: site
-#    path: /site
-#  commands:
-#    - pip install -U -r ./requirements.txt
-#    - mkdocs build
-#    - cp -r site/ /site
-#    - chown 1000:1000 /site
-#    - chmod -R 777 /site
-#  when:
-#    event: 
-#      - push
-#    branch: 
-#      - main
-
-- name: build states
+- name: build main
   image: git.st1t.ru/thest1tch/mkdocs-material:latest
   pull: if-not-exists
   volumes:
@@ -37,12 +19,29 @@ steps:
     event: 
       - push
     branch: 
+      - main
+
+- name: build states
+  image: git.st1t.ru/thest1tch/mkdocs-material:latest
+  pull: if-not-exists
+  volumes:
+  - name: site-dev
+    path: /site
+  commands:
+    - mkdocs build
+    - cp -r site/ /site
+    - chown 1000:1000 /site
+    - chmod -R 777 /site
+  when:
+    event: 
+      - push
+    branch: 
       - states/*
 
 volumes:
-- name: site
-  host:
-    path: /opt/appdata/mkdocswiki
 - name: site-st1tru
   host:
     path: /opt/appdata/nginx/st1t.ru
+- name: site-dev
+  host:
+    path: /opt/appdata/nginx/dev.thest1tch.ru
