@@ -118,6 +118,31 @@ nav:
         - Установка DialUX: software/win/desk/dialux.md
     - VS Code:
       - Запрос учетных данных Git: software/vscode/asking-git-credentials.md
+  - Hardware:
+    - IP Телефоны:
+      - Grandstream:
+        - Provisioning через TFTP: hardware/phone/grandstream/provisioning.md
+        - Пример конфигурации: hardware/phone/grandstream/example-config.md
+      - Ipecs-MG:
+        - Общие настройки: hardware/phone/ipecs-mg/general.md
+        - Книги: hardware/phone/ipecs-mg/books.md
+        - Голосовые приветствия: hardware/phone/ipecs-mg/voice.md
+    - Принтеры:
+      - Kyocera: hardware/printers/kyocera.md      
+    - ТСД:
+      - hardware/tsd/index.md
+      - Переустановка ОС:
+        - CE 5.0: hardware/tsd/reinstall-os/ce5.md
+        - CE 7.0: hardware/tsd/reinstall-os/ce7.md
+        - WM 6.1: hardware/tsd/reinstall-os/m61.md
+      - Настройка ТСД: hardware/tsd/config-ce.md
+      - Настройка Wi-Fi: hardware/tsd/config-wifi.md
+      - Настройка TelnetCE: hardware/tsd/config-telnetce.md
+      - Установка TelnetCE: hardware/tsd/install-telnetce.md
+      - Траблшутинг: hardware/tsd/troubleshooting.md
+    - Synology:
+      - HPE Microserver Gen10: hardware/synology/install-hpe-ms-gen10.md
+    - HPE iLo: hardware/hpe-ilo.md
   - Proxmox:
     - Proxmox VE:
       - proxmox/index.md
@@ -141,24 +166,7 @@ nav:
   - Другое:
     - Закрыть фишинговый сайт: other/close-phishing-site.md
     - SSL для сайта: other/ssl-for-site.md
-    - Self Hosted: other/self-hosted.md
-    - Hardware:
-      - HPE iLo: other/hardware/hpe-ilo.md
-      - Принтеры:
-        - Kyocera: other/hardware/printers/kyocera.md      
-    - ТСД:
-      - other/tsd/index.md
-      - Переустановка ОС:
-        - CE 5.0: other/tsd/reinstall-os/ce5.md
-        - CE 7.0: other/tsd/reinstall-os/ce7.md
-        - WM 6.1: other/tsd/reinstall-os/m61.md
-      - Настройка ТСД: other/tsd/config-ce.md
-      - Настройка Wi-Fi: other/tsd/config-wifi.md
-      - Настройка TelnetCE: other/tsd/config-telnetce.md
-      - Установка TelnetCE: other/tsd/install-telnetce.md
-      - Траблшутинг: other/tsd/troubleshooting.md
-    - Synology:
-      - HPE Microserver Gen10: other/synology/install-hpe-ms-gen10.md
+    - Self Hosted: other/self-hosted.md   
     - Office:
       - Excel:
         - other/office/excel/index.md
@@ -171,14 +179,6 @@ nav:
         - VBA Удаление пароля: other/office/excel/vba-remove-pass.md
       - Outlook:
         - Ошибки: other/office/outlook/error.md
-    - IP Телефоны:
-      - Grandstream:
-        - Provisioning через TFTP: other/phone/grandstream/provisioning.md
-        - Пример конфигурации: other/phone/grandstream/example-config.md
-      - Ipecs-MG:
-        - Общие настройки: other/phone/ipecs-mg/general.md
-        - Книги: other/phone/ipecs-mg/books.md
-        - Голосовые приветствия: other/phone/ipecs-mg/voice.md
   - Сеть:
     - Утилиты:
       - Wtraf: network/tools/wtraf.md
