@@ -22,7 +22,10 @@ nav:
     - Сервисы: 
       - Drone CI: docker/drone.md
       - Gitea: docker/gitea.md
-      - Grafana+Prometheus: docker/grafana-prometheus.md
+      #- Grafana+Prometheus: docker/grafana-prometheus.md
+      - Grafana:
+        - index.md
+        - Prometheus: docker/grafana/prometheus.md
       - HandBrake: docker/handbrake.md
       - Homarr: docker/homarr.md
       - Homepage: docker/homepage.md
@@ -45,8 +48,8 @@ nav:
         - Plex Meta Manager: docker/plex/plex-mm.md
         - Plex Trakt Sync: docker/plex/plextraktsync.md
         - Prowlarr: docker/plex/prowlarr.md
-        #- Radarr: 
-        #- Sonarr:
+        - Radarr: docker/plex/radarr.md
+        - Sonarr: docker/plex/sonarr.md
       - Redis: docker/redis.md
       - Samba: docker/samba.md
       - Syncthing: docker/syncthing.md

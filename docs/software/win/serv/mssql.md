@@ -31,12 +31,6 @@ GO
 
 ## Удаление Log Shipping без второго сервера
 
-![Database Properties](http%3A%2F%2Flh3.googleusercontent.com%2F-8u7Gar1yO54%2FVbBhpg9uqII%2FAAAAAAAAAxk%2FscsPJqqKNRI%2Fimage_thumb%5B5%5D.png)
-
-![Error Deleting Log Shipping Configuration](http%3A%2F%2Flh3.googleusercontent.com%2F-0bXadZHuNDo%2FVbBhqc0arwI%2FAAAAAAAAAxw%2FiTkT7RLZsJQ%2Fimage_thumb%5B7%5D.png)
-
-![image](http%3A%2F%2Flh3.googleusercontent.com%2F-2JVo2aXEBAU%2FVbBhq7Ocz-I%2FAAAAAAAAAyA%2FMB1kTPPthvM%2Fimage_thumb%5B9%5D.png)
-
 Удаление через скрипт
 
 ```sql

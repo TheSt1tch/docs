@@ -9,8 +9,8 @@
 
 ## Карточка
 
-![](../../images/hass/card-budilnik-1.png)
-![](../../images/hass/card-budilnik-2.png)
+![](../../../images/hass/card-budilnik-1.png)
+![](../../../images/hass/card-budilnik-2.png)
 
 ??? example "Код карточки"
 
