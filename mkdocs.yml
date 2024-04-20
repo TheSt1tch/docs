@@ -145,6 +145,7 @@ nav:
       - Траблшутинг: hardware/tsd/troubleshooting.md
     - Synology:
       - HPE Microserver Gen10: hardware/synology/install-hpe-ms-gen10.md
+      - Update CA root Cert: hardware/synology/update-ca-root-cert.md
     - HPE iLo: hardware/hpe-ilo.md
   - Proxmox:
     - Proxmox VE:
