@@ -50,6 +50,7 @@ nav:
         - Prowlarr: docker/plex/prowlarr.md
         - Radarr: docker/plex/radarr.md
         - Sonarr: docker/plex/sonarr.md
+        - Решение проблем: docker/plex/troubleshooting.md
       - Redis: docker/redis.md
       - Samba: docker/samba.md
       - Syncthing: docker/syncthing.md
