@@ -145,13 +145,3 @@ sudo docker compose -f ~/docker/docker-compose.yml up -d
 Другой безопасный способ доступа к Plex - использовать обратный прокси. Но для этого нужно доменное имя или DDNS.
 
 Можно использовать NGINX или Traefik. NGINX прост в настройке, но не гибок. Я рекомендую [Traefik](../traefik/index.md).
-
-## Полезные команды
-
-### Удаление мусора из PhotoTranscoder
-
-Часто бывает так, что папка `../Library/Application Support/Plex Media Server/Cache/PhotoTranscoder` начинает занимать очень много места. в ней хранится весь кеш из изображений. Разные версии превью - все тут. Надо как-то почистить старое, чтобы освободить место:
-
-```bash
-find "/home/plex/plexconfig/Library/Application Support/Plex Media Server/Cache/PhotoTranscoder" -name "*.jpg" -type f -mtime +5 -delete
-```
