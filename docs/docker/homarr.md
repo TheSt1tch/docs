@@ -1,12 +1,12 @@
 # Homarr - дашборд для быстрого доступа к сервисам. 
 
-[![](https://img.shields.io/github/stars/ajnart/homarr?label=%E2%AD%90%20Stars)](https://github.com/ajnart/homarr)
-[![](https://img.shields.io/github/v/release/ajnart/homarr?label=%F0%9F%9A%80%20Release)](https://github.com/ajnart/homarr/releases/latest)
+[![](https://img.shields.io/github/stars/ajnart/homarr?label=%E2%AD%90%20Stars&style=flat-square)](https://github.com/ajnart/homarr)
+[![](https://img.shields.io/github/v/release/ajnart/homarr?label=%F0%9F%9A%80%20Release&style=flat-square)](https://github.com/ajnart/homarr/releases/latest)
 [![](https://img.shields.io/badge/Demo-purple)](https://demo.homarr.dev/ru)
 
-Современная панель управления домашней лабой. Позваоляет видеть все, что поднято.
+Современная панель управления домашней лабой. Позволяет видеть все, что поднято.
 
-
+![](../images/docker/homarr.png)
 
 ## Запуск через Docker
 

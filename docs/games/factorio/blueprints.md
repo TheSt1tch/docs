@@ -9,8 +9,6 @@
 ## Modular Rail Network
 [![](https://i.imgur.com/7UHaFA1.jpeg)](https://www.factorio.school/view/-K_VpUtsGAlQeBuZ1oez)
 
-[![name](pic)](link)
-
 ##  Tileable Science Production 0.17-1.0 - Early to Mid Game
 
 [![](http://i.imgur.com/42RoMSil.jpeg)](https://www.factorio.school/view/-KnQ865j-qQ21WoUPbd3)
