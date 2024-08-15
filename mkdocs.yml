@@ -21,6 +21,7 @@ nav:
         - TCP Route: docker/traefik/tcp-routes.md
     - Сервисы: 
       - Drone CI: docker/drone.md
+      - Dockge: docker/dockge.md
       - Gitea: docker/gitea.md
       #- Grafana+Prometheus: docker/grafana-prometheus.md
       - Grafana:
@@ -198,6 +199,8 @@ nav:
       - Split-DNS: network/mikrotik/split-dns.md
       - Hairpin NAT: network/mikrotik/hairpin-nat.md
       - UPnP: network/mikrotik/upnp.md
+      - eBGP: network/mikrotik/ebgp.md
+      - Маркировка трафика: network/mikrotik/mark-traffik.md
       #- Обход блокировок: network/mikrotik/unblock-site.md
     - Ubiquiti:
       - Добавление новой точки: network/ubi/add-new-ap.md
