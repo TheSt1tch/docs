@@ -26,7 +26,8 @@
 
 ## 🔧 Установка
 
-Requirements:
+Требования:
+
 - [Docker](https://docs.docker.com/engine/install/) 20+ / Podman
 - (Podman only) podman-docker (Debian: `apt install podman-docker`)
 - OS:
