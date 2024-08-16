@@ -76,6 +76,7 @@ nav:
     - Использование Proxy: ubuntu/proxy-system.md
     - Watchdog: ubuntu/watchdog.md
     - Обновление дистрибутива: ubuntu/upgrade-dist.md
+    - Русский язык в консоли: ubuntu/add-locale-russian.md
     - Backup:
       - Google Диск: ubuntu/backup/google.md
       - Yandex: ubuntu/backup/yandex.md
