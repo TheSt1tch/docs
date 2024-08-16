@@ -173,6 +173,7 @@ nav:
     - Wirenboard:
       - Новый контроллер: smart-home/wirenboard/new-controller.md
   - Другое:
+    - Полезные ресурсы: other/helpfull-links.md
     - Закрыть фишинговый сайт: other/close-phishing-site.md
     - SSL для сайта: other/ssl-for-site.md
     - Self Hosted: other/self-hosted.md   
