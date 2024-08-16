@@ -16,6 +16,7 @@
 3. Отключить запуск AppArmor при загрузке.
   ```
   sudo systemctl disable apparmor
+  
   Synchronizing state of apparmor.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
   Executing: /usr/lib/systemd/systemd-sysv-install disable apparmor
   Removed "/etc/systemd/system/sysinit.target.wants/apparmor.service".
@@ -23,6 +24,7 @@
 4. При необходимости удалите пакет AppArmor и его зависимости.
   ```
   sudo apt remove --assume-yes --purge apparmor
+
   Reading package lists... Done
   Building dependency tree       
   Reading state information... Done
@@ -32,7 +34,7 @@
   After this operation, 122 MB disk space will be freed.
   ##### snipped
   ```
-  
+
 !!! tip
 
     Это также удалит snapd . Продолжайте, только если вы не используете snapd для управления пакетами. Переустановка snapd также установит AppArmor как зависимость.
