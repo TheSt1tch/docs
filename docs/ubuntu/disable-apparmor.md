@@ -31,7 +31,8 @@
   0 upgraded, 0 newly installed, 2 to remove and 0 not upgraded.
   After this operation, 122 MB disk space will be freed.
   ##### snipped
-
+  ```
+  
 !!! tip
 
     Это также удалит snapd . Продолжайте, только если вы не используете snapd для управления пакетами. Переустановка snapd также установит AppArmor как зависимость.
