@@ -78,6 +78,7 @@ nav:
     - Обновление дистрибутива: ubuntu/upgrade-dist.md
     - Русский язык в консоли: ubuntu/add-locale-russian.md
     - Отключение AppArmor: ubuntu/disable-apparmor.md
+    - Защита Linux: ubuntu/secure-linux.md
     - Backup:
       - Google Диск: ubuntu/backup/google.md
       - Yandex: ubuntu/backup/yandex.md
