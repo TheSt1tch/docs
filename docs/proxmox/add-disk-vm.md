@@ -10,8 +10,8 @@ qm set <vm_id> -[virtio|sata|ide|scsi][№] [/dev/disk/by-id|/dev/disk/by-uuid]
 
 где:
 
-* vm_id - номер виртуальной машины (в интерфейсе Proxmox указывается перед именем VM)
-* \[virtio|sata|ide|scsi\]\[№\] - допустимый тип и номер HDD интерфейса
+* `vm_id` - номер виртуальной машины (в интерфейсе Proxmox указывается перед именем VM)
+* `virtio|sata|ide|scsi` - допустимый тип и номер HDD интерфейса
 * `/dev/disk/by-id|/dev/disk/by-uuid` - пробрасываемою физическое устройство
 
 # ID и UUID
