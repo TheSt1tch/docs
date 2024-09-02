@@ -158,6 +158,7 @@ nav:
       - proxmox/index.md
       - CT Template: proxmox/ct-template.md
       - Nvidia LXC: proxmox/nvidia-lxc.md
+      - Добавление диска к VM: proxmox/add-disk-vm.md
   - Умный дом:
     - Home Assistant:
       - Установка на Debian: smart-home/hass/install-hass-debian.md
