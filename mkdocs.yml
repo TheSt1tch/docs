@@ -309,4 +309,9 @@ markdown_extensions:
   - pymdownx.superfences # allows for the nesting of code blocks inside other blocks
   - pymdownx.keys
 
+extra:
+  analytics:
+    provider: google
+    property: G-E6GYT2D13K
+
 copyright: 2024 &copy; TheSt1tch - Licensed under GPLv3
