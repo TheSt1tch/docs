@@ -14,6 +14,9 @@ https://wirenboard.com/wiki/Wiren_Board_7.4
 timedatectl set-timezone Asia/Yekaterinburg
 ```
 
+
+https://github.com/4mr/wb-engine
+
 ## Новое устройство для Modbus
 
 Первым делом, увеличиваем скорость работы. Со стандартных 9600 на 115200, что соответствует "быстрому modbus"
@@ -35,7 +38,7 @@ systemctl start wb-mqtt-serial
 ## Смена ID-адреса у устройства
 
 Останавливаем службу `wb-mqtt-serial`. Затем выставляем новый адрес и запускаем службу обратно.
-Идентификацию делам по серийноу номеру:
+Идентификацию делаем по серийноу номеру:
 ```
 systemctl stop wb-mqtt-serial
 wb-modbus-scanner -d /dev/ttyRS485-2 -b 115200 -s 174072 -i 51 - сменить адрес у устройства с SN=174072
