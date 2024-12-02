@@ -93,6 +93,7 @@ nav:
       - HPE:
         - Management Component Pack: ubuntu/hpe/hpe-mcp.md
       - NCDU: ubuntu/ncdu.md
+      - btop: ubuntu/btop.md
       - ctop: ubuntu/ctop.md
   - Software:
     - Powershell:
