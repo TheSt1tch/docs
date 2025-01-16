@@ -39,6 +39,7 @@ nav:
         - Cron: docker/nextcloud/cron.md
         - Проблемы с data: docker/nextcloud/problems-after-moving-data-folder.md
         - OCC: docker/nextcloud/occ-files-scan.md
+        - OIDC-login: docker/nextcloud/oidc-login.md
       - Photoprism: docker/photoprism.md
       - Pictshare: docker/pictshare.md
       - Plex: 
