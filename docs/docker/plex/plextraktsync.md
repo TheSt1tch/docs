@@ -15,8 +15,6 @@
 ## Установка через docker-compose
 
 ```yaml
-version: "3.7"
-
 services:
   plextraktsync:
     image: ghcr.io/taxel/plextraktsync
@@ -31,7 +29,7 @@ services:
     command: sync
 ```
 
-Запустить синхронизацию: `docker-compose run --rm plextraktsync sync`
+Запустить синхронизацию: `docker compose run --rm plextraktsync sync`
 
 Для запуска автоматически по расписанию можно использовать crontab или sheduler:
 
