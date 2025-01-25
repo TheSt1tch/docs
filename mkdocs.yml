@@ -76,6 +76,7 @@ nav:
     - Установка xRDP: ubuntu/xrdp.md
     - Использование Proxy: ubuntu/proxy-system.md
     - Watchdog: ubuntu/watchdog.md
+    - Копирование через SCP: ubuntu/scp.md
     - Обновление дистрибутива: ubuntu/upgrade-dist.md
     - Русский язык в консоли: ubuntu/add-locale-russian.md
     - Отключение AppArmor: ubuntu/disable-apparmor.md
