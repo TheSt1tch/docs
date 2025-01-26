@@ -1,0 +1,18 @@
+pipeline:
+
+  build:
+    image: git.st1t.ru/thest1tch/mkdocs-material:latest
+    commands:
+      - mkdocs build --clean
+      - ls -l site/
+      - cp -r site/ /site
+      - chown 1000:1000 /site
+      - chmod -R 777 /site      
+
+  deploy:
+    image: alpine:latest
+    volumes:
+      - /opt/appdata/nginx/st1t.ru/site:/site # Локальный каталог, монтируемый в контейнер Nginx
+    commands:
+      - cp -r site/* /site/
+      - echo "Deployment complete."
