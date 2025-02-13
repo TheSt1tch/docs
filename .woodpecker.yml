@@ -18,7 +18,7 @@ steps:
     volumes:
       - /opt/appdata/nginx/st1t.ru/site:/site
     commands:
-      - apt install rsync -y
+      - apt-get update && apt-get install -y rsync
       - rsync -avz --delete site/* /site/ #cp -r site/* /site/
       - echo "Deployment complete."
       
