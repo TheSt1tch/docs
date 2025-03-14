@@ -177,6 +177,8 @@ nav:
           - Время: smart-home/hass/automation/trigger/time.md
     - Wirenboard:
       - Новый контроллер: smart-home/wirenboard/new-controller.md
+      - Термостат Hessway: smart-home/wirenboard/termostat-hessway.md
+      - Полезные ссылки: smart-home/wirenboard/useful-links.md
   - Другое:
     - Полезные ресурсы: other/helpfull-links.md
     - Закрыть фишинговый сайт: other/close-phishing-site.md
