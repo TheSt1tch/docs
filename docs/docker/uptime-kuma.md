@@ -2,6 +2,9 @@
 
 [![](https://img.shields.io/github/stars/louislam/uptime-kuma.svg?label=%E2%AD%90%20Stars&style=flat-square)](https://github.com/louislam/uptime-kuma)
 [![](https://img.shields.io/docker/pulls/louislam/uptime-kuma?color=brightgreen)](https://hub.docker.com/r/louislam/uptime-kuma)
+[![](https://img.shields.io/badge/Demo-purple)](https://demo.kuma.pet/start-demo)
+
+<img src="https://user-images.githubusercontent.com/1336778/212262296-e6205815-ad62-488c-83ec-a5b0d0689f7c.jpg" width="700" alt="" />
 
 Чтобы установить Uptime Kuma с использованием Docker, выполните следующие шаги:
 
