@@ -55,8 +55,9 @@ nav:
         - Решение проблем: docker/plex/troubleshooting.md
       - Redis: docker/redis.md
       - Samba: docker/samba.md
-      - Syncthing: docker/syncthing.md
       - Socket Proxy: docker/socket-proxy.md
+      - Syncthing: docker/syncthing.md
+      - Uptime Kuma: docker/uptime-kuma.md
       - WikiJS: docker/wikijs.md
     - Игровые сервера:
       - Valheim: docker/games/valheim.md
