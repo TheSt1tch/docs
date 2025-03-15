@@ -145,3 +145,58 @@ sudo docker compose -f ~/docker/docker-compose.yml up -d
 Другой безопасный способ доступа к Plex - использовать обратный прокси. Но для этого нужно доменное имя или DDNS.
 
 Можно использовать NGINX или Traefik. NGINX прост в настройке, но не гибок. Я рекомендую [Traefik](../traefik/index.md).
+
+## Бекапы
+
+Для того, чтобы сделать бекап файлов Plex, нужно:
+
+
+
+
+## Решение проблем
+
+### database disk image is malformed
+
+**Проблема:** 
+
+Проблемы при обновлении файлов на дисках, в логах попадается ошибка `sqlite3_statement_backend::loadOne: database disk image is malformed`
+
+Попытки восстановления через [официальное руководство](https://support.plex.tv/articles/repair-a-corrupted-database/) ни к чему не приводят.
+
+**Решение:** 
+
+В таких случаях рекомендуется использовать тулзу [PlexDBRepair](https://github.com/ChuckPa/PlexDBRepair)
+
+Например, для запуска внутри контейнера Docker, делаем:
+
+```
+# вход в докер контейнер
+sudo docker exec -it plex /bin/bash
+# скачать последнюю версию со страницы https://github.com/ChuckPa/PlexDBRepair/releases/latest
+# например:
+wget https://github.com/ChuckPa/PlexDBRepair/releases/download/v1.10.02/DBRepair.sh
+# распаковать скачаный файл и перейти в директорию cd
+chmod +x DBRepair.sh
+./DBRepair.sh
+```
+
+В случае, если не помогает, то остается вариант через восстановление из резервной копии БД. В этом случае будут утеряны изменения. Бекапы хранятся только за неделю и если проблема старая, то есть риск не найти живого варианта. У меня не было такого, чтобы **PlexDBRepair** не помогла.
+
+Для восстановления из бекапа, идем по пути: `plex/Library/Application Support/Plex Media Server/Plug-in Support`
+
+Останавливаем Plex
+
+Переименовываем папку `Databases`:
+```
+mv Databases Databases1
+```
+Создаем новый каталог для БД
+```
+mkdir Databases
+```
+Перемещаем 2 файла бекапов в новую папку из `Databases1`. Для примера
+```
+mv Databases1/com.plexapp.plugins.library.db-2024-07-20 Databases/com.plexapp.plugins.library.db
+mv Databases1/com.plexapp.plugins.library.blobs.db-2024-07-20 Databases/com.plexapp.plugins.library.blobs.db
+```
+Запускаем Plex
