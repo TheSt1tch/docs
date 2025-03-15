@@ -169,13 +169,18 @@ sudo docker compose -f ~/docker/docker-compose.yml up -d
 
 Например, для запуска внутри контейнера Docker, делаем:
 
+вход в докер контейнер
 ```
-# вход в докер контейнер
 sudo docker exec -it plex /bin/bash
-# скачать последнюю версию со страницы https://github.com/ChuckPa/PlexDBRepair/releases/latest
-# например:
+```
+скачать последнюю версию со страницы https://github.com/ChuckPa/PlexDBRepair/releases/latest
+
+например:
+```
 wget https://github.com/ChuckPa/PlexDBRepair/releases/download/v1.10.02/DBRepair.sh
-# распаковать скачаный файл и перейти в директорию cd
+```
+распаковать скачаный файл и перейти в директорию cd
+```
 chmod +x DBRepair.sh
 ./DBRepair.sh
 ```
