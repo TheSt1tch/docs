@@ -71,6 +71,7 @@ nav:
     - Расширение раздела: ubuntu/resize-part.md
     - Добавление S3: ubuntu/add-s3.md
     - LVM: ubuntu/lvm.md
+    - fsck: ubuntu/fsck.md
     - Docker+UFW: ubuntu/docker-ufw.md
     - Монтирование CIFS: ubuntu/mount-cifs.md
     - Ubuntu bash aliases: ubuntu/bash-aliases.md
@@ -320,4 +321,4 @@ extra:
     provider: google
     property: G-E6GYT2D13K
 
-copyright: 2024 &copy; TheSt1tch - Licensed under GPLv3
+copyright: 2025 &copy; TheSt1tch - Licensed under GPLv3
