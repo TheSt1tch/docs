@@ -16,3 +16,9 @@
 ## HMI-панель
 
 1. [HMI-панель из планшета](https://habr.com/ru/companies/wirenboard/articles/765232/)
+
+
+## Home Assistant
+
+1. [WB + Home Assistant через MQTT](https://support.wirenboard.com/t/integracziya-wirenboard-v-home-assistant-cherez-mqtt/9456)
+2. [WB Engine](https://support.wirenboard.com/t/wb-engine-topik-avtora-skripta/13251)
