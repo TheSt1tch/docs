@@ -6,7 +6,7 @@
 
 ![](https://community-assets.home-assistant.io/original/4X/6/0/0/6002f8a3af520e53d3f95f8bb5e061c1bd4d1554.gif)
 
-??? example title="Пример"
+??? tip title="Пример"
 
     ```yaml
     type: custom:stack-in-card
