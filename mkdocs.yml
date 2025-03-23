@@ -172,6 +172,8 @@ nav:
       - Package: 
         - smart-home/hass/package/index.md
         - Будильник: smart-home/hass/package/budilnik.md
+      - Dashboards:
+        - Mushroom Cards: smart-home/hass/dashboard/mushroom-cards.md
       - Device:
         - Xiaomi Airpurifier: smart-home/hass/device/xiaomi-airpurifier.md
       - Автоматизации:
